@@ -1,0 +1,76 @@
+[
+    {
+        "id": 1,
+        "catégory": "site-web",
+        "technologies": ["HTML", "CSS", "JavaScript", "React"],
+        "name": "kasa",        
+        "cover": "image1.jpg",
+        "image": "image1.jpg",
+        "link": "https://www.google.com", 
+        "description": "Description of Project 1"
+    },   
+    {
+        "id": 2,
+        "catégory": "site-web",
+        "technologies": ["HTML", "CSS", "JavaScript", "React"],
+        "name": "Project 1",
+        "cover": "image1.jpg",
+        "image": "image1.jpg",
+        "link": "https://www.google.com", 
+        "description": "Description of Project 1"
+    },
+    {
+        "id": 3,
+        "catégory": "Conception de site web",
+        "technologies": ["HTML", "CSS", "JavaScript", "React"],
+        "name": "Menu Maker",        
+        "cover": "image1.jpg",
+        "image": "image1.jpg",
+        "link": "https://www.google.com",
+        "description": "Description of Project 1"
+    },
+    {
+        "id": 4,
+        "catégory": "site-web",
+        "technologies": ["HTML", "CSS"],
+        "name": "Booki",        
+        "cover": "image1.jpg",
+        "image": "image1.jpg",
+        "link": "https://www.google.com",
+        "description": "Développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix."
+    },
+    {
+        "id": 5,
+        "catégory": "site-web",
+        "technologies": ["HTML", "CSS", "JavaScript", "Figma","Kamban"],
+        "name": "Portfolio-architecte-sophie-bluel",        
+        "cover": "image1.jpg",
+        "image": "image1.jpg",
+        "link": "https://www.google.com",
+        "description": "Description of Project 1"
+    },
+    {
+        "id": 6,
+        "catégory": "site-web",
+        "technologies": ["HTML", "CSS", "JavaScript", "React"],
+        "name": "Project 1",        
+        "cover": "image1.jpg",
+        "image": "image1.jpg",
+        "link": "https://www.google.com",
+        "description": "Description of Project 1"
+    },
+
+    {
+        "catégory": ["site-web", "maquette", "site vitrine", "gestion-admin","support tchnique" ], 
+        "technologies": 
+            {
+                "Frontend" : ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express", "MongoDB", "twig ", "GitHub"],
+                "Backend" : ["Node.js", "Express", "MongoDB", "MySQL", "Git", "phpMyAdmin", "wampServer"], 
+                "Gestion de projet" : ["github", "Figma", "Canvas", "Trello"]
+            }
+    },
+
+    {
+        "manquants": [ "PostgreSQL", "Docker", "Git", "GitLab", "GitLab CI/CD", "GitLab Pages", "GitLab Runner"]
+    }
+]
