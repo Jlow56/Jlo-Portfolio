@@ -1,67 +1,109 @@
 [
     {
         "id": 1,
-        "catégory": "site-web",
-        "technologies": ["HTML", "CSS", "JavaScript", "React"],
-        "name": "kasa",        
-        "cover": "image1.jpg",
-        "image": "image1.jpg",
-        "link": "https://www.google.com", 
-        "description": "Description of Project 1"
+        "category": "Site-web",
+        "technologies": ["Node.js", "MongoDB", "JavaScript, JWT", "Bcrypt", "React"],
+        "name": "Mon Vieux Grimoire",        
+        "cover": "https://github.com/Jlow56/Jlo-Portfolio/blob/main/src/assets/photos-projets/Mon-Vieux-Grimoire/Accueil.png",
+        "image": [
+            "https://github.com/Jlow56/Jlo-Portfolio/blob/main/src/assets/photos-projets/Mon-Vieux-Grimoire/Accueil.png",
+            "https://github.com/Jlow56/Jlo-Portfolio/blob/main/src/assets/photos-projets/Mon-Vieux-Grimoire/Add-book-emppty.png",
+            "https://github.com/Jlow56/Jlo-Portfolio/blob/main/src/assets/photos-projets/Mon-Vieux-Grimoire/Add-book-preview.png",
+            "https://github.com/Jlow56/Jlo-Portfolio/blob/main/src/assets/photos-projets/Mon-Vieux-Grimoire/Book-page.png",
+            "https://github.com/Jlow56/Jlo-Portfolio/blob/main/src/assets/photos-projets/Mon-Vieux-Grimoire/Login.png", 
+            "https://github.com/Jlow56/Jlo-Portfolio/blob/main/src/assets/photos-projets/Mon-Vieux-Grimoire/Succes-add-book.png",
+            "https://github.com/Jlow56/Jlo-Portfolio/blob/main/src/assets/photos-projets/Mon-Vieux-Grimoire/Succes-delet.png"
+        ],
+        "link": "coming soon", 
+        "git-hub": "https://github.com/Jlow56/Mon-Vieux-Grimoire/tree/main",
+        "description": "L’objectif du site Mon Vieux Grimoire est de donner la possibilité aux lecteurs de créer des livres, de les noter et de consulter les livres existants ainsi que leurs notes.", 
+        "problematic": "Comment créer un compte et comment permettre une authentification sécurisée des utilisateurs?<br/> Comment permettre aux utilisateurs connectés de créer, noter et consulter des livres en éffectuant une moyenne des notes? ",
+        "solution": "J'ai utiilisé les technologies suivantes : <br/>Node.js + Express, MongoDB + Mongoose, JSON Web Token (JWT), Multer (upload d’image), Bcrypt (hachage des mots de passe), Helmet (sécurité des headers HTTP), Express-validator (validation des entrées utilisateur), Sharp (optimisation des images), Multer (upload d’image). J'ai mis en place une base de données afin de stocker les informations des utilisateurs et des livres. L'authentification des utilisateurs est gérée via JWT (JSON Web Tokens) pour assurer la sécurité des sessions."
     },   
     {
         "id": 2,
-        "catégory": "site-web",
-        "technologies": ["HTML", "CSS", "JavaScript", "React"],
-        "name": "Project 1",
-        "cover": "image1.jpg",
-        "image": "image1.jpg",
-        "link": "https://www.google.com", 
-        "description": "Description of Project 1"
-    },
+        "category": "Site-web",
+        "technologies": [ "Vite.js", "SCSS", "JavaScript", "React"],
+        "name": "kasa",        
+        "cover": "https://github.com/Jlow56/Jlo-Portfolio/blob/main/src/assets/photos-projets/Kasa/home.png",
+        "image": [
+            "https://github.com/Jlow56/Jlo-Portfolio/blob/main/src/assets/photos-projets/Kasa/home.png",
+            "https://github.com/Jlow56/Jlo-Portfolio/blob/main/src/assets/photos-projets/Kasa/about.png", 
+            "https://github.com/Jlow56/Jlo-Portfolio/blob/main/src/assets/photos-projets/Kasa/housing-card.png"
+        ],
+        "link": "coming soon",   
+        "git-hub": "https://github.com/Jlow56/kasa",
+        "description": "Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec un code legacy important. Une refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté back-end, et React côté front-end. Kasa en a également profité pour commander de nouvelles maquettes auprès de son designer1", 
+        "problematic": "Comment fonctionne React et la navigation entre les pages ?<br/>Comment gérer les données des logements et les afficher dynamiquement ?",
+        "solution": " J'ai utilisé Vite.js pour le bundling et la gestion des ressources, ainsi que SCSS pour le style. Les données des logements sont gérées via un fichier JSON local, permettant une navigation fluide entre les pages sans rechargement complet de la page. J'ai mis en place des composants réutilisables pour les cartes de logement et les pages de détails, facilitant ainsi la maintenance et l'évolution de l'application."
+    },   
     {
         "id": 3,
-        "catégory": "Conception de site web",
-        "technologies": ["HTML", "CSS", "JavaScript", "React"],
-        "name": "Menu Maker",        
-        "cover": "image1.jpg",
-        "image": "image1.jpg",
-        "link": "https://www.google.com",
-        "description": "Description of Project 1"
+        "category": "SEO & optimisation",
+        "technologies": ["HTML", "CSS", "JavaScript", "SEO"],
+        "name": "Nina-Carducci",        
+        "cover": "https://github.com/Jlow56/Jlo-Portfolio/blob/main/src/assets/photos-projets/Nina%20Carducci/Nina-Carducci.gif",
+        "image": "https://github.com/Jlow56/Nina-Carducci/blob/main/JEAN_Jean-Louis_2_Rapport_Doptimisation_032025.pdf",
+        "link": "https://jlow56.github.io/Nina-Carducci/",
+        "git-hub": "https://www.google.com",
+        "pdf": "https://github.com/Jlow56/Jlo-Portfolio/blob/main/src/assets/pdf/Nina-Carducci_JEAN_Jean-Louis/JEAN_Jean-Louis_2_Rapport_Doptimisation_032025.pdf",
+        "description": "Après avoir pris contact avec la propriétaire du site Nina Carucci Photographie , j'ai réalisé une optimisation SEO de son site web et corriger les bugs éxistants.", 
+        "problematic": "Comment otpimiser le référencement naturel du site web et corriger les bugs existants ?",
+        "solution": "J'ai mis en place des balises meta appropriées, optimisé les images avec le format Webp, et optimiser le code HTML. De plus, j'ai corrigé les bugs existants en JavaScript pour assurer une meilleure expérience utilisateur. "
     },
     {
         "id": 4,
-        "catégory": "site-web",
+        "category": "Site-web",
         "technologies": ["HTML", "CSS"],
         "name": "Booki",        
-        "cover": "image1.jpg",
-        "image": "image1.jpg",
-        "link": "https://www.google.com",
-        "description": "Développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix."
+        "cover": "https://github.com/Jlow56/Jlo-Portfolio/blob/main/src/assets/photos-projets/Booki/Accueil.png",
+        "image": "https://github.com/Jlow56/Jlo-Portfolio/blob/main/src/assets/photos-projets/Booki/Accueil.png",
+        "link": "https://jlow56.github.io/Booki/?search=#",
+        "git-hub": "https://github.com/Jlow56/Booki",
+        "description": "Développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.", 
+        "problematic": "Comment assurer que le site est responsive et accessible sur tous les appareils ?",
+        "solution": "J'ai utilisé des techniques de responsive design et des média-queries pour rendre le site accessible et responsive pour assurer une expérience utilisateur optimale sur tous les appareils."
     },
     {
         "id": 5,
-        "catégory": "site-web",
+        "category": "Site-web",
         "technologies": ["HTML", "CSS", "JavaScript", "Figma","Kamban"],
         "name": "Portfolio-architecte-sophie-bluel",        
         "cover": "image1.jpg",
         "image": "image1.jpg",
-        "link": "https://www.google.com",
+        "link": "coming soon",
+        "git-hub": "https://www.google.com",
         "description": "Description of Project 1"
     },
     {
         "id": 6,
-        "catégory": "site-web",
+        "category": "site-web",
         "technologies": ["HTML", "CSS", "JavaScript", "React"],
         "name": "Project 1",        
         "cover": "image1.jpg",
         "image": "image1.jpg",
         "link": "https://www.google.com",
-        "description": "Description of Project 1"
+        "git-hub": "https://www.google.com",
+        "description": "Description of Project 1", 
+        "solution": ""
+
+    },
+    {
+        "id": 7,
+        "category": "site-web",
+        "technologies": ["HTML", "CSS", "JavaScript", "React"],
+        "name": "Project 1",        
+        "cover": "image1.jpg",
+        "image": "image1.jpg",
+        "link": "https://www.google.com",
+        "git-hub": "https://www.google.com",
+        "description": "Description of Project 1", 
+        "solution": ""
+
     },
 
     {
-        "catégory": ["site-web", "maquette", "site vitrine", "gestion-admin","support tchnique" ], 
+        "category": ["site-web", "maquette", "site vitrine", "gestion-admin","support tchnique" ], 
         "technologies": 
             {
                 "Frontend" : ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express", "MongoDB", "twig ", "GitHub"],

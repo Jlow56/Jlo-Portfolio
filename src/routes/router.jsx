@@ -1,17 +1,16 @@
 import React from 'react';
 // react router dom
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
-
 // pages public
-import Portfolio from '../pages/Portfolio';
-import Projects from '../pages/Projects';
-import About from '../pages/About';
-import Error from '../pages/Error';
-// pages admin
-import Login from '../pages/Login';
-import Dashboard from '../pages/Dashboard';
+import Portfolio from '../pages/Portfolio.jsx';
+import ProjectDetails from '../pages/ProjectDetails.jsx';
+import Error from '../pages/Error.jsx';
+// // pages admin
+// import Login from '../sections/Login.js';
+// import Dashboard from '../sections/Dashboard.js';
+
 // Layouts
-import Header from '../layouts/Header';
+import Header from '../layouts/Header.jsx';
 import Main from '../layouts/Main.jsx';
 import Footer from '../layouts/Footer.jsx/index.js';
 
@@ -33,14 +32,7 @@ const AppRouter = () =>
             <Routes>
                 <Route element={<StaticLayout />}>
                     <Route path="/" element={<Portfolio />} />
-                    <Route path="/portfolio" element={<Portfolio />} />
-                    <Route path="/projects/:id" element={<Projects />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="*" element={<Error />} />
-                </Route>
-                <Route path="/admin" element={<AdminLayout />}>
-                    <Route path="/admin/login" element={<Login />} />
-                    <Route path="/admin/dashboard" element={<Dashboard />} />
+                    <Route path="/project/:id" element={<ProjectDetails />} />
                     <Route path="*" element={<Error />} />
                 </Route>
             </Routes>
