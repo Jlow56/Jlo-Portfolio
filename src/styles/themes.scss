@@ -1,0 +1,13 @@
+/* Thème clair (valeurs par défaut) */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #111111;
+    --accent-color: #7f00ff;
+}
+
+/* Thème sombre */
+[data-theme='dark'] {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --accent-color: #00bfff;
+}

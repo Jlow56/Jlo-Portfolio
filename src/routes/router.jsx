@@ -1,18 +1,14 @@
 import React from 'react';
 // react router dom
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
-// pages public
-import Portfolio from '../pages/Portfolio.jsx';
-import ProjectDetails from '../pages/ProjectDetails.jsx';
-import Error from '../pages/Error.jsx';
-// // pages admin
-// import Login from '../sections/Login.js';
-// import Dashboard from '../sections/Dashboard.js';
-
-// Layouts
-import Header from '../layouts/Header.jsx';
-import Main from '../layouts/Main.jsx';
-import Footer from '../layouts/Footer.jsx/index.js';
+// pages 
+import PortfolioPage from '../pages/Portfolio';
+import ProjectDetailsPage from '../pages/ProjectDetails';
+import ErrorPage from '../pages/Error';
+// layouts
+import Header from '../layouts/Header';
+import Main from '../layouts/Main';
+import Footer from '../layouts/Footer';
 
 function StaticLayout() {
     return (
@@ -30,13 +26,17 @@ const AppRouter = () =>
     (
         <BrowserRouter>
             <Routes>
-                <Route element={<StaticLayout />}>
-                    <Route path="/" element={<Portfolio />} />
-                    <Route path="/project/:id" element={<ProjectDetails />} />
-                    <Route path="*" element={<Error />} />
+                <Route path ="/" element={<StaticLayout/>}>
+                    <Route index element={<PortfolioPage/>} />
+                    <Route path="ProjectDetails/:id" element={<ProjectDetailsPage/>} />
+                    <Route path="*" element={<ErrorPage/>} />
                 </Route>
             </Routes>
         </BrowserRouter>
     );
 
 export default AppRouter;
+
+// // pages admin
+// import Login from '../sections/Login.js';
+// import Dashboard from '../sections/Dashboard.js';

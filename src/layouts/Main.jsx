@@ -1,10 +1,11 @@
 import React from 'react';
-import '../styles/main.scss';
+import './Main.scss';
+import { Outlet } from 'react-router-dom';
 
 const Main = () => {
     return (
         <main>
-            
+            <Outlet />
         </main>
     );
 };

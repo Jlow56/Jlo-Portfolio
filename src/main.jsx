@@ -1,9 +1,13 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import AppRouter from "./routes/router";
-import "main.scss";
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import AppRouter from './routes/router';
+import ThemeProvider from './context/ThemeContext'; 
+import './main.scss';
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <AppRouter />
-  </StrictMode>,
-)
+    <ThemeProvider>           
+      <AppRouter />
+    </ThemeProvider>
+  </StrictMode>
+);

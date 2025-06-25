@@ -1,29 +1,58 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../styles/header.scss';
+import React, { useContext } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import ThemeToggleButton from '../components/Header/ThemeToggleButton';
+import { ThemeContext } from '../context/ThemeContext';
+
+// 👉 Importe directement les deux SVG
+import logoLight from '../assets/logo/JlowDev/Logo-Gris-Blanc.svg';
+import logoDark  from '../assets/logo/JlowDev/Logo-theme-dark.svg';
+
+import './Header.scss';
 
 function Header() {
-    return (
-        <header className="header">
-            <nav className="header-navbar">
-                <NavLink to="/">
-                    <img src={logo} alt="logo portfolio de JlowDev" />
-                </NavLink>
+  const location = useLocation();
+  const navigate = useNavigate();
+  const { isDark, toggleTheme } = useContext(ThemeContext);
 
-               <ul className="header-navbar-ul">
-                    <li>
-                        <NavLink to="/" className="nav-link">Home</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/about" className="nav-link">About</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/projects" className="nav-link">Projects</NavLink>
-                    </li>
-               </ul>
-            </nav>
-        </header>
-    );
+  // Choix du logo selon le thème
+  const logo = isDark ? logoDark : logoLight;
+
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleClick = (sectionId) => {
+    if (location.pathname === '/') {
+      scrollToSection(sectionId);
+    } else {
+      navigate('/');
+      setTimeout(() => scrollToSection(sectionId), 100);
+    }
+  };
+
+  return (
+    <header className="header">
+      <div className="header-container">
+        <div className="header-logo">
+          <a href="/" onClick={(e) => { e.preventDefault(); navigate('/'); }}>
+            <img src={logo} alt="Logo JlowDev" className='logo-JlowDev'/>
+          </a>
+        </div>
+
+        <nav className="header-nav">
+          <ul>
+            <li><button onClick={() => handleClick('presentation')}>Présentation</button></li>
+            <li><button onClick={() => handleClick('skills')}>Compétences</button></li>
+            <li><button onClick={() => handleClick('projects')}>Projets</button></li>
+            <li><button onClick={() => handleClick('education')}>Formations</button></li>
+            <li><button onClick={() => handleClick('contact')}>Contact</button></li>
+            <li><ThemeToggleButton isDark={isDark} onChange={toggleTheme} /></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
 }
 
 export default Header;

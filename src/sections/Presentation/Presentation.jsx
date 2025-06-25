@@ -3,7 +3,7 @@ import React from 'react';
 const Presentation = () => {
     return (
         <>
-            <section className="presentation" id='presentation'>
+            <section className="presentation" id='presentation' aria-label="section de présentation">
                 <h2 className="presentation-title">
                     Vous cherchez un développeur web ?
                 </h2>

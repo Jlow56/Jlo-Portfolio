@@ -26,5 +26,10 @@
     "globals": "^16.0.0",
     "sass": "^1.89.2",
     "vite": "^6.3.5"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
 }
