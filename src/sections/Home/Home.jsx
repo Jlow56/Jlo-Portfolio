@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from '../../context/ThemeContext';
 
-const Home = () => {
+import homeCirlceBackgroundWhite from '../../assets/img/home/home-cirlce-background-white.svg';
+import homeCirlceBackgroundDark from '../../assets/img/home/home-circle-background-dark.svg';
+import homeLineBackgroundWhite from '../../assets/img/home/home-line-background-white.svg';
+import homeLineBackgroundDark from '../../assets/img/home/home-line-background-dark.svg';
+
+
+function Home() {
+     const { isDark } = useContext(ThemeContext);
+     const homeCircleBackground = isDark ? homeCirlceBackgroundDark : homeCirlceBackgroundWhite;
+     const homeLineBackground = isDark ? homeLineBackgroundDark : homeLineBackgroundWhite;
+
     return (
         <>
             <section className="home" id="home" aria-label="section accueil du portfolio">
-                <div className="home-right-container">
-                    <div className="home-right-content">
+                <div className="home-left-container">
+                    <div className="home-left-content">
                         <h1 className="home-title">
                             Bonjour, moi c’est <br/>
                             <span>Jean-louis</span><br/>
@@ -19,12 +30,12 @@ const Home = () => {
                         </a>
                     </div>
                     <div className="home-image">
-                        <img src="/assets/images/home.png" alt="Home" />
+                        <img src={homeLineBackground} alt="Home" />
                     </div>
                 </div>
-                <div className="home-left-container">
-                    <div className="home-left-content">
-                        <img src="/assets/images/home.png" alt="Home" />
+                <div className="home-right-container">
+                    <div className="home-right-content">
+                        <img src={homeCircleBackground} alt="Décor du fond d'écran" />
                     </div>
                 </div>
             </section>

@@ -40,7 +40,7 @@ function Header() {
           </a>
         </div>
 
-        <nav className="header-nav">
+        <nav className="header-nav logo-rotate" aria-label="Navigation principale">
           <ul>
             <li><button onClick={() => handleClick('presentation')}>Présentation</button></li>
             <li><button onClick={() => handleClick('skills')}>Compétences</button></li>
