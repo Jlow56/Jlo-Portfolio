@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import ThemeToggleButton from '../components/Header/ThemeToggleButton';
 import { ThemeContext } from '../context/ThemeContext';
+import './Header.scss';
 
 // 👉 Importe directement les deux SVG
 import logoLight from '../assets/logo/JlowDev/Logo-Gris-Blanc.svg';
@@ -34,19 +35,19 @@ function Header() {
   return (
     <header className="header">
       <div className="header-container">
-        <div className="header-logo">
+        <div className="header-logo logo-rotate">
           <a href="/" onClick={(e) => { e.preventDefault(); navigate('/'); }}>
-            <img src={logo} alt="Logo JlowDev" className='logo-JlowDev'/>
+            <img src={logo} alt="Logo JlowDev " className='logo-JlowDev '/>
           </a>
         </div>
 
-        <nav className="header-nav logo-rotate" aria-label="Navigation principale">
-          <ul>
-            <li><button onClick={() => handleClick('presentation')}>Présentation</button></li>
-            <li><button onClick={() => handleClick('skills')}>Compétences</button></li>
-            <li><button onClick={() => handleClick('projects')}>Projets</button></li>
-            <li><button onClick={() => handleClick('education')}>Formations</button></li>
-            <li><button onClick={() => handleClick('contact')}>Contact</button></li>
+        <nav className="header-nav" aria-label="Navigation principale">
+          <ul className="header-nav-ul">
+            <li><button className="header-nav-button" onClick={() => handleClick('presentation')}>Présentation</button></li>
+            <li><button className="header-nav-button" onClick={() => handleClick('skills')}>Compétences</button></li>
+            <li><button className="header-nav-button" onClick={() => handleClick('projects')}>Projets</button></li>
+            <li><button className="header-nav-button" onClick={() => handleClick('education')}>Formations</button></li>
+            <li><button className="header-nav-button" onClick={() => handleClick('contact')}>Contact</button></li>
             <li><ThemeToggleButton isDark={isDark} onChange={toggleTheme} /></li>
           </ul>
         </nav>

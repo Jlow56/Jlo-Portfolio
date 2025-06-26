@@ -1,0 +1,16 @@
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: var(--bg-img);
+    background-size: cover;
+    background-repeat: no-repeat;
+    .home-title{
+        font-size: 3rem;
+        color: var(--accent-color);
+        text-align: left;
+        
+    }
+
+    
+}

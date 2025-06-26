@@ -1,4 +1,4 @@
-@import './styles/themes';
+@use './styles/themes';
 
 html {
   color-scheme: light dark;
@@ -10,7 +10,7 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color-1);
   color: var(--text-color);
   transition: background 0.3s ease, color 0.3s ease;
   -webkit-font-smoothing: antialiased;
@@ -25,33 +25,6 @@ body {
 }
 
 
-.logo-JlowDev {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo-JlowDev:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo-JlowDev.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: spin(0deg);
-  }
-  to {
-    transform: spin(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo-JlowDev {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
 // .card {
 //   padding: 2em;

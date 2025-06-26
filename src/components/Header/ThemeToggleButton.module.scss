@@ -8,10 +8,11 @@
   padding: 4px 8px;
   border-radius: 35px;
   cursor: pointer;
+  
 }
 
 .IsLight {
-  background-color: var(--color-toggle-dark);
+  background-color:  #000000;
 }
 
 .IsDark {
@@ -27,7 +28,7 @@
   width: 26px;
   height: 26px;
   position: relative;
-  box-shadow: inset 8px -8px 0 0 var(--color-toggle-dark, #b36262);
+  box-shadow: inset 8px -8px 0 0 var(--color-toggle-dark);
   transform: scale(1) rotate(-2deg);
   transition: box-shadow 0.5s ease 0s, transform 0.4s ease 0.1s;
 }
@@ -52,14 +53,14 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  box-shadow: 0 -16px 0 var(--color-toggle-light, #eee),
-    0 16px 0 var(--color-toggle-light, #eee),
-    16px 0 0 var(--color-toggle-light, #eee),
-    -16px 0 0 var(--color-toggle-light, #eee),
-    12px 12px 0 var(--color-toggle-light, #eee),
-    -12px 12px 0 var(--color-toggle-light, #eee),
-    12px -12px 0 var(--color-toggle-light, #eee),
-    -12px -12px 0 var(--color-toggle-light, #eee);
+  box-shadow: 0 -16px 0 var(--color-toggle-light),
+    0 16px 0 var(--color-toggle-light),
+    16px 0 0 var(--color-toggle-light),
+    -16px 0 0 var(--color-toggle-light),
+    12px 12px 0 var(--color-toggle-light),
+    -12px 12px 0 var(--color-toggle-light),
+    12px -12px 0 var(--color-toggle-light),
+    -12px -12px 0 var(--color-toggle-light);
   transform: scale(0);
   transition: all 0.3s ease;
 }
@@ -71,7 +72,7 @@
 }
 
 .container input:checked + div::before {
-  background: var(--color-toggle-light, #eee);
+  background: var(--color-toggle-light);
   transition: background 0.3s ease 0.1s;
 }
 
@@ -79,3 +80,9 @@
   transform: scale(1.5);
   transition: transform 0.5s ease 0.15s;
 }
+
+.container input:active + div::after {
+  cursor: not-allowed;
+}
+
+

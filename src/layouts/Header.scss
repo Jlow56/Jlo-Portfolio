@@ -1,0 +1,124 @@
+.header{
+    display: flex;
+
+    .header-container {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .header-nav-ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            align-items: center;
+            gap: 3rem;
+
+            .header-nav-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0.5em 1.2em;
+                font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+                font-size: 1rem;
+                font-weight: 700;
+                border: 3px solid transparent;
+                border-radius: 15px;
+
+                background: 
+                    linear-gradient(var(--bg-color-1), var(--bg-color-1)) padding-box,
+                    var(--nav-border-color) border-box;
+                background-origin: border-box;
+                background-clip: padding-box, border-box;
+
+                color: var(--text-color);
+                cursor: pointer;
+                transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.05);
+                    background: linear-gradient(var(--bg-color-1), var(--bg-color-1)) padding-box,
+                    var(--nav-border-color) border-box;
+                    color: var(--accent-color);
+                }
+
+                .li {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(to right, aqua, blue);
+}
+            }
+        }
+
+        .logo-JlowDev {
+            height: 10em;
+            will-change: filter;
+            transition: filter 300ms;
+        }
+
+        .logo-JlowDev:hover {
+         filter: drop-shadow(0 0 2em #646cffaa);
+        }
+
+        .logo-JlowDev.react:hover {
+            filter: drop-shadow(0 0 2em #61dafbaa);
+        }
+
+        @keyframes logo-spin {
+            from {
+                transform: spin(0deg);
+            }
+            to {
+                transform: spin(360deg);
+            }
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+            a:nth-of-type(2) .logo-JlowDev {
+                animation: logo-spin infinite 20s linear;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header .header-container {
+        gap: 1rem;
+    .header-nav-ul {
+        gap: 1rem;
+    
+        .header-nav-button {
+            padding: 0.5em 1em;
+            font-size: 0.75em;
+        }
+    }
+}
+    @media screen and (max-width: 768px) {
+        .header-container {
+            flex-direction: column;
+            align-items: center;
+
+            .header-nav-ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .logo-JlowDev {
+                height: 6em;
+            }
+        }
+        
+    }
+
+}
+
