@@ -1,20 +1,67 @@
 [
-    {
-        "id": 1,
-        "category": "Frontend",
-        "logo": ["https://example.com/logo-js.png", "https://example.com/logo-react.png"],
-        "language": "JavaScript",
-        "level": "Expert"
-    },
-    {
-        "id": 2,
-        "category": "Backend",
-        "language": "Python",
-        "level": "Intermediate"
-    },
-    {
-        "id": 3,
-        "category": "Soft Skills",
-        "name": "Java"
-    }
+  {
+    "id": 1,
+    "category": "Frontend",
+    "language": "JavaScript (ES6+), HTML5, CSS3, JSON",
+    "frameworks": "React.js, Vue.js, Twig, React Router, React Hook Form, Redux, Axios",
+    "ui_ux": "Bootstrap, Tailwind CSS, SASS/SCSS, Flexbox, CSS Grid, animations CSS, React Modal",
+    "design": "Figma, Canva",
+    "responsive": "Mobile First, accessibilité (ARIA)",
+    "outils": "Git, GitHub, npm, Yarn, ESLint, Prettier, Vite, Composer",
+    "logo": [
+      "/logo/Skills/frontend/bootstrap.png",
+      "/logo/Skills/frontend/canva.png",
+      "/logo/Skills/frontend/composer.png",
+      "/logo/Skills/frontend/css3.png",
+      "/logo/Skills/frontend/eslint.png",
+      "/logo/Skills/frontend/figma.png",
+      "/logo/Skills/frontend/html5.png",
+      "/logo/Skills/frontend/javascript.png",
+      "/logo/Skills/frontend/npm.png",
+      "/logo/Skills/frontend/react.png",
+      "/logo/Skills/frontend/sass.png",
+      "/logo/Skills/frontend/trello.png",
+      "/logo/Skills/frontend/vitejs.png"
+    ]
+  },
+  {
+    "id": 2,
+    "category": "Backend",
+    "langages": "PHP, Twig, JavaScript (Node.js), SQL (MySQL), NoSQL (MongoDB)",
+    "frameworks": "Express.js",
+    "api": "API REST, JWT, express-validator, GraphQL",
+    "securite": "bcrypt, CORS, sécurisation des routes",
+    "fichiers": "Multer, Sharp",
+    "outils": "Firebase, Postman, Swagger, dotenv, Nodemon, babel",
+    "logo": [
+      "/logo/Skills/backend/amazonwebservices.png",
+      "/logo/Skills/backend/azuresqldatabase.png",
+      "/logo/Skills/backend/docker.png",
+      "/logo/Skills/backend/fetch.png",
+      "/logo/Skills/backend/firebase.png",
+      "/logo/Skills/backend/mongodb.png",
+      "/logo/Skills/backend/mysql.png",
+      "/logo/Skills/backend/nodejs.png",
+      "/logo/Skills/backend/php.png",
+      "/logo/Skills/backend/postman.png",
+      "/logo/Skills/backend/swagger.png"
+    ]
+  },
+  {
+    "id": 3,
+    "category": "Soft Skills",
+    "skills": [
+      { "name": "Résolution de problèmes" },
+      { "name": "Sens des responsabilités" },
+      { "name": "Gestion de projet" },
+      { "name": "Communication" },
+      { "name": "Esprit d’équipe" },
+      { "name": "Adaptabilité" },
+      { "name": "Autonomie" },
+      { "name": "Sociabilité" },
+      { "name": "Altruisme" },
+      { "name": "Créativité" },
+      { "name": "Curiosité" }
+    ]
+  }
 ]

@@ -3,7 +3,7 @@ import { ThemeContext } from '../../context/ThemeContext';
 
 import homeCirlceBackgroundWhite from '../../assets/img/home/home-cirlce-background-white.svg';
 import homeCirlceBackgroundDark from '../../assets/img/home/home-circle-background-dark.svg';
-import downloadIcon from '../../assets/logo/Home/download-logo.svg';
+
 
 import './Home.scss';
 
@@ -11,7 +11,7 @@ import './Home.scss';
 function Home() {
      const { isDark } = useContext(ThemeContext);
      const homeCircleBackground = isDark ? homeCirlceBackgroundDark : homeCirlceBackgroundWhite;
-        const downloadIconPath = isDark ? downloadIcon : downloadIcon; // Assuming the same icon is used for both themes
+        
 
     return (
         <>
@@ -25,9 +25,9 @@ function Home() {
                         </h1>
                     </div>
                     <div className="cta-cv">
-                        <a href="https://www.canva.com/design/DAF_8RyGtKs/B_JTg0EqVtaH7v8H8WxPCQ/view?utm_content=DAF_8RyGtKs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h94e6a4c36b" className="btn btn-primary" download>
-                            <p>Télécharger mon CV</p>
-                            <img src={downloadIconPath} alt="Download" />
+                        <a href="https://www.canva.com/design/..." className="btn btn-cv" target="_blank" rel="noopener noreferrer">
+                            <span>Voir mon CV en ligne</span>
+                            <img src="/src/assets/logo/Home/download-logo.svg" alt="Download" className="download-icon"/>
                         </a>
                     </div>
                     

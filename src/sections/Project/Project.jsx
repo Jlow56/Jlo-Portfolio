@@ -1,4 +1,4 @@
-import React from "react";   
+   
 import "./Project.scss";
 // import { projects } from "../../data/projects";
 

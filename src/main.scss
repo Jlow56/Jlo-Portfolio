@@ -2,33 +2,58 @@
 
 html {
   color-scheme: light dark;
+
+  body {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color-1);
+    color: var(--text-color);
+    transition: background 0.3s ease, color 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    #root {
+      margin: 0 auto;
+      padding: 4rem 5em;
+      text-align: center;
+    
+      main {
+        gap: 7rem;
+        display: flex;
+        flex-direction: column;
+
+        section:not(:first-of-type) {
+          position: relative;
+          padding-top: 3rem; // espace pour le trait
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 4px;
+            width: 65%;
+            background:  var(--section-border-color);
+          }
+        }
+
+        h2 {
+          color: var(--h2-color);
+          font-size: 3rem;
+        }
+
+        li{
+          list-style: none;
+        }
+      }
+    }
+  }
 }
 
-body {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  background-color: var(--bg-color-1);
-  color: var(--text-color);
-  transition: background 0.3s ease, color 0.3s ease;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-
-
-// .card {
-//   padding: 2em;
-// }
 
 // .read-the-docs {
 //   color: #522626;

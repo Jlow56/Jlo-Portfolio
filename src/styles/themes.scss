@@ -1,23 +1,35 @@
 /* Thème clair (valeurs par défaut) */
 :root {
-  //all
-  
-    --text-color: #111111;
-    --accent-color: #000000;
+//all
+  --text-color: #111111;
+  --text-color-2: #ffffff;
+  --accent-color: #000000;
   // header
-    --header-text-color: #111111;
-    // nav
-    --nav-texte-color: #14223b;
-    --nav-border-color: linear-gradient(90deg, #000000, #dbdbdb);
-    --color-toggle-dark: #fcfcfc;
-    
-    // Section
-    --bg-color-1: #ffffff;
-    --bg-color-2: #edf0f2;
+  --header-text-color: #111111;
+  // nav
+  --nav-texte-color: #14223b;
+  --nav-border-color: linear-gradient(90deg, #000000, #dbdbdb);
+  --color-toggle-dark: #fcfcfc;
 
-    //home
-    --bg-img: url('/src/assets/img/home/home-line-background-white.svg');
+  // Section
+  --bg-color-1: #ffffff;
+  --bg-color-2: #edf0f2;
+  --section-border-color:linear-gradient(90deg, #000000, #bbbbbb);
 
+  //home
+  --bg-img: url('/src/assets/img/home/home-line-background-white.svg');
+  --bg-btn-cv-start: #000000; /* couleur de fond */
+  --bg-btn-cv-end: #737373; /* couleur de fond */
+  --border-btn-cv-start: #e7e7e7;
+  --border-btn-cv-end: #000000;
+
+  //presentation
+  --h2-color: #000000;
+
+
+  // Bouton
+  --border-btn-cv: linear-gradient(90deg, var(--border-btn-cv-start), var(--border-btn-cv-end));
+  --color-toggle-light: #f6d447;
 }
 
 /* Thème sombre */
@@ -29,4 +41,10 @@
   --accent-color: #57ffdc;
   --color-toggle-light: #f6d447;
   --bg-img: url('/src/assets/img/home/home-line-background-dark.svg');
+  --bg-btn-cv-start: #004aad;
+  --bg-btn-cv-end: #cb6ce6;
+  --border-btn-cv-start: #8c52ff;
+  --border-btn-cv-end: #5ce1e6;
+  --h2-color:#9340ff;
+  --section-border-color:  linear-gradient(90deg, #ff5757, #8c52ff);
 }

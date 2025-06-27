@@ -1,0 +1,32 @@
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+
+    .skills-item {
+        border: 3px solid transparent;
+        border-radius: 15px;
+        background: linear-gradient(var(--bg-color-1), var(--bg-color-1)) padding-box,var(--nav-border-color) border-box;
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+        color: var(--text-color);
+        cursor: pointer;
+        transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+        width: 30rem;
+        height: 34rem;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+        h3 {
+            color: var(--text-color);
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .skills-list {
+            padding: 2rem;
+        }
+    }
+}

@@ -43,12 +43,12 @@ function Header() {
 
         <nav className="header-nav" aria-label="Navigation principale">
           <ul className="header-nav-ul">
-            <li><button className="header-nav-button" onClick={() => handleClick('presentation')}>Présentation</button></li>
-            <li><button className="header-nav-button" onClick={() => handleClick('skills')}>Compétences</button></li>
-            <li><button className="header-nav-button" onClick={() => handleClick('projects')}>Projets</button></li>
-            <li><button className="header-nav-button" onClick={() => handleClick('education')}>Formations</button></li>
-            <li><button className="header-nav-button" onClick={() => handleClick('contact')}>Contact</button></li>
-            <li><ThemeToggleButton isDark={isDark} onChange={toggleTheme} /></li>
+            <li className='header-li'><button className="header-nav-button" onClick={() => handleClick('presentation')}>Présentation</button></li>
+            <li className='header-li'><button className="header-nav-button" onClick={() => handleClick('skills')}>Compétences</button></li>
+            <li className='header-li'><button className="header-nav-button" onClick={() => handleClick('projects')}>Projets</button></li>
+            <li className='header-li'><button className="header-nav-button" onClick={() => handleClick('education')}>Formations</button></li>
+            <li className='header-li'><button className="header-nav-button" onClick={() => handleClick('contact')}>Contact</button></li>
+            <li className='header-li'><ThemeToggleButton isDark={isDark} onChange={toggleTheme} /></li>
           </ul>
         </nav>
       </div>

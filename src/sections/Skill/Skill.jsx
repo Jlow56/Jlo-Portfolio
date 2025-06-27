@@ -1,26 +1,40 @@
-import React from "react";
-import  "./Skill.scss";
+import "./Skill.scss";
+import skillsData from "../../datas/skills.json";
+import LogoCarousel from "../../components/Skills/LogoCarousel";
 
-const Skill = () => {
-    return (
-        <div className="skills" id="skills" aria-label="section compétences du portfolio">
-            <h1 className="skills-title">Mes compétences</h1>
-            <div className="skills-container">
-                <div className="skills-item">
-                    <h2>Développement Web</h2>
-                    <p>HTML, CSS, JavaScript, React, Node.js</p>
-                </div>
-                <div className="skills-item">
-                    <h2>Base de données</h2>
-                    <p>MySQL, MongoDB, PostgreSQL</p>
-                </div>
-                <div className="skills-item">
-                    <h2>Outils et technologies</h2>
-                    <p>Git, Docker, AWS, Firebase</p>
-                </div>
-            </div>
-        </div>
-    );
+function Skill() {
+  return (
+    <div className="skills" id="skills" aria-label="section compétences du portfolio">
+      <h2 className="skills-title">Mes compétences</h2>
+      <div className="skills-container">
+        {skillsData.map((category) => (
+          <div className="skills-item" key={category.id}>
+            <h3>{category.category}</h3>
+            <ul className="skills-list">
+              {category.skills ? (
+                category.skills.map((skill, index) => (
+                  <li key={index} className="skill"> {skill.name}</li>
+                ))
+              ) : (
+                Object.entries(category).map(([key, value]) => {
+                  if (["id", "category", "logo"].includes(key)) return null;
+                  return (
+                    <li key={key} className="skill">
+                      <strong>{key.replace(/_/g, " ").replace(/([a-z])([A-Z])/g, "$1 $2")} :</strong> {value}
+                    </li>
+                  );
+                })
+              )}
+            </ul>
+
+            {category.logo && category.logo.length > 0 && (
+              <LogoCarousel logos={category.logo} />
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
 
-export default Skill
+export default Skill;
