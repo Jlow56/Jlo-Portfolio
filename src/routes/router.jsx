@@ -1,4 +1,3 @@
-import React from 'react';
 // react router dom
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 // pages 
@@ -28,7 +27,7 @@ const AppRouter = () =>
             <Routes>
                 <Route path ="/" element={<StaticLayout/>}>
                     <Route index element={<PortfolioPage/>} />
-                    <Route path="ProjectDetails/:id" element={<ProjectDetailsPage/>} />
+                    <Route path="project/:id" element={<ProjectDetailsPage />} />
                     <Route path="*" element={<ErrorPage/>} />
                 </Route>
             </Routes>

@@ -2,12 +2,12 @@
   {
     "id": 1,
     "category": "Frontend",
-    "language": "JavaScript (ES6+), HTML5, CSS3, JSON",
-    "frameworks": "React.js, Vue.js, Twig, React Router, React Hook Form, Redux, Axios",
-    "ui_ux": "Bootstrap, Tailwind CSS, SASS/SCSS, Flexbox, CSS Grid, animations CSS, React Modal",
-    "design": "Figma, Canva",
-    "responsive": "Mobile First, accessibilité (ARIA)",
-    "outils": "Git, GitHub, npm, Yarn, ESLint, Prettier, Vite, Composer",
+    "Language": "JavaScript (ES6+), HTML5, CSS3, JSON",
+    "Frameworks": "React.js, Vue.js, Twig, React Router, React Hook Form, Redux, Axios",
+    "Ui_ux": "Bootstrap, Tailwind CSS, SASS/SCSS, Flexbox, CSS Grid, animations CSS, React Modal",
+    "Design": "Figma, Canva",
+    "Responsive": "Mobile First, accessibilité (ARIA)",
+    "Outils": "Git, GitHub, npm, Yarn, ESLint, Prettier, Vite, Composer",
     "logo": [
       "/logo/Skills/frontend/bootstrap.png",
       "/logo/Skills/frontend/canva.png",
@@ -27,12 +27,12 @@
   {
     "id": 2,
     "category": "Backend",
-    "langages": "PHP, Twig, JavaScript (Node.js), SQL (MySQL), NoSQL (MongoDB)",
-    "frameworks": "Express.js",
-    "api": "API REST, JWT, express-validator, GraphQL",
-    "securite": "bcrypt, CORS, sécurisation des routes",
-    "fichiers": "Multer, Sharp",
-    "outils": "Firebase, Postman, Swagger, dotenv, Nodemon, babel",
+    "Langages": "PHP, Twig, JavaScript (Node.js), SQL (MySQL), NoSQL (MongoDB)",
+    "Frameworks": "Express.js",
+    "Api": "API REST, JWT, express-validator, GraphQL",
+    "Securite": "bcrypt, CORS, sécurisation des routes",
+    "Fichiers": "Multer, Sharp",
+    "Outils": "Firebase, Postman, Swagger, dotenv, Nodemon, babel",
     "logo": [
       "/logo/Skills/backend/amazonwebservices.png",
       "/logo/Skills/backend/azuresqldatabase.png",
@@ -51,17 +51,15 @@
     "id": 3,
     "category": "Soft Skills",
     "skills": [
-      { "name": "Résolution de problèmes" },
-      { "name": "Sens des responsabilités" },
-      { "name": "Gestion de projet" },
-      { "name": "Communication" },
-      { "name": "Esprit d’équipe" },
-      { "name": "Adaptabilité" },
-      { "name": "Autonomie" },
-      { "name": "Sociabilité" },
-      { "name": "Altruisme" },
-      { "name": "Créativité" },
-      { "name": "Curiosité" }
-    ]
+  { "logo": ["/logo/Skills/soft/ruby-light.png", "/logo/Skills/soft/ruby-dark.png"] },
+  { "name": "Résolution de problèmes" },
+  { "name": "Sens des responsabilités" },
+  { "name": "Gestion du temps"},
+  { "name": "Esprit d’équipe" },
+  { "name": "Communication" },
+  { "name": "Adaptabilité" },
+  { "name": "Créativité" },
+  { "name": "Autonomie" }
+]
   }
 ]

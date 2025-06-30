@@ -19,11 +19,15 @@ html {
       margin: 0 auto;
       padding: 4rem 5em;
       text-align: center;
+      min-height: 100vh;
     
       main {
         gap: 7rem;
         display: flex;
+        flex : 1;
         flex-direction: column;
+
+        
 
         section:not(:first-of-type) {
           position: relative;

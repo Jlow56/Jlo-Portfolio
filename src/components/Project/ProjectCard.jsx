@@ -1,6 +1,5 @@
-
 import HomeCard from "./HomeCard";
-import "./ShowCards.scss";
+import "./ProjectCard.scss";
 
 function ShowCards({ accomodations }) {
   return (

@@ -1,8 +1,8 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import "./Collapse.scss";
-import "../components/About/AboutContent.scss";
+
 
 
 const Collapse = ({ title, children }) => {
@@ -20,9 +20,9 @@ const Collapse = ({ title, children }) => {
           if (e.key === "Enter" || e.key === " ") toggleCollapse();
         }}
       >
-        <h2 className="collapse-header-title">{title}</h2>
+        <h3 className="collapse-header-title">{title}</h3>
         <i className={`collapse-header-icon ${isOpen ? "rotate" : ""}`}>
-          <FontAwesomeIcon icon={faChevronDown} />
+          <FontAwesomeIcon icon={faChevronDown} className="chevron-icon" />
         </i>
       </div>
 

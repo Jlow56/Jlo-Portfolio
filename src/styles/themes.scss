@@ -12,6 +12,8 @@
   --color-toggle-dark: #fcfcfc;
 
   // Section
+
+  // all
   --bg-color-1: #ffffff;
   --bg-color-2: #edf0f2;
   --section-border-color:linear-gradient(90deg, #000000, #bbbbbb);
@@ -29,7 +31,15 @@
 
   // Bouton
   --border-btn-cv: linear-gradient(90deg, var(--border-btn-cv-start), var(--border-btn-cv-end));
+  //couleur du bouton switch theme
   --color-toggle-light: #f6d447;
+  // project
+  --border-color-toggle-cv: linear-gradient(90deg, #b3b3b3, #464545);
+  --bg-color-toggle: linear-gradient(90deg, #f6d447, #f6d447);
+
+  //container
+  --border-top-container-start: #b3b3b3;
+  --border-top-container-end: #464545;
 }
 
 /* Thème sombre */
@@ -47,4 +57,7 @@
   --border-btn-cv-end: #5ce1e6;
   --h2-color:#9340ff;
   --section-border-color:  linear-gradient(90deg, #ff5757, #8c52ff);
+  --border-color-toggle-cv: linear-gradient(90deg, #8c52ff, #ff914d);
+  --border-top-container-start: #ff5757;
+  --border-top-container-end: #bff109;
 }

@@ -1,4 +1,3 @@
-import React from 'react';
 import Home from '../sections/Home/Home';
 import Presentation from '../sections/Presentation/Presentation';
 import Skill from '../sections/Skill/Skill';
