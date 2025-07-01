@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import ThemeToggleButton from '../components/Header/ThemeToggleButton';
 import { ThemeContext } from '../context/ThemeContext';

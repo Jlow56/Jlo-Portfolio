@@ -1,5 +1,3 @@
-import "./Skill.scss";
-
 import { useContext } from 'react';
 import { ThemeContext } from '../../context/ThemeContext';
 
@@ -9,6 +7,7 @@ import LogoCarousel from "../../components/Skills/LogoCarousel";
 import rubyIconeLight from "../../assets/logo/Skills/soft/ruby-dark.png";
 import rubyIconeDark from  "../../assets/logo/Skills/soft/ruby-light.png";
 
+import "./Skill.scss";
 
 
 function Skill() {
