@@ -3,7 +3,7 @@ import Presentation from '../sections/Presentation/Presentation';
 import Skill from '../sections/Skill/Skill';
 import Project from '../sections/Project/Project';
 import Education from '../sections/Education/Education';
-import Contact from '../sections/Contact/Contact';
+import Contact from "../sections/Contact/Contact";
 
 const Portfolio = () => {
     return (

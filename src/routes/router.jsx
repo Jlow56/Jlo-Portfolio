@@ -1,4 +1,3 @@
-// react router dom
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 // pages 
 import PortfolioPage from '../pages/Portfolio';
@@ -35,7 +34,3 @@ const AppRouter = () =>
     );
 
 export default AppRouter;
-
-// // pages admin
-// import Login from '../sections/Login.js';
-// import Dashboard from '../sections/Dashboard.js';

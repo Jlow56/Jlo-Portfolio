@@ -1,4 +1,5 @@
- 
+import React from 'react';
+import "./Contact.scss";
 const Contact = () => {
     return (
         <section className="contact" id="contact" aria-label="section contact du portfolio">
