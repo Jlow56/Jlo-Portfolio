@@ -4,6 +4,8 @@ import { ThemeContext } from '../../context/ThemeContext';
 import homeCirlceBackgroundWhite from '../../assets/img/home/home-cirlce-background-white.svg';
 import homeCirlceBackgroundDark from '../../assets/img/home/home-circle-background-dark.svg';
 
+import downloadLogo from '../../assets/logo/Home/download-logo.svg';
+
 import './Home.scss';
 
 function Home() {
@@ -25,7 +27,7 @@ function Home() {
                     <div className="cta-cv">
                         <a href="https://www.canva.com/design/DAF_8RyGtKs/_19JftruejbOLl7rH1VGmA/edit?utm_content=DAF_8RyGtKs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" className="btn btn-cv" target="_blank" rel="noopener noreferrer">
                             <span>Voir mon CV en ligne</span>
-                            <img src="/src/assets/logo/Home/download-logo.svg" alt="Download" className="download-icon"/>
+                            <img src={downloadLogo} alt="Download" className="download-icon" />
                         </a>
                     </div>
                     
