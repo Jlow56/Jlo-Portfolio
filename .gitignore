@@ -1,9 +1,22 @@
-# 📦 Node.js
-node_modules
-package-lock.json
+# Logs
+logs
+*.log
 npm-debug.log*
 
-# ⚙️ Environnements
-.env
-.env.*.local
-.vscode/
+package-lock.json*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
