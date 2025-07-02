@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 import PortfolioPage from '../pages/Portfolio';
 import ProjectDetailsPage from '../pages/ProjectDetails';
 import ErrorPage from '../pages/Error';
+import MerciPage from "../pages/Merci";
 // layouts
 import Header from '../layouts/Header';
 import Main from '../layouts/Main';
@@ -28,6 +29,7 @@ const AppRouter = () =>
                     <Route index element={<PortfolioPage/>} />
                     <Route path="project/:id" element={<ProjectDetailsPage />} />
                     <Route path="*" element={<ErrorPage/>} />
+                    <Route path="merci" element={<MerciPage/>} />
                 </Route>
             </Routes>
         </BrowserRouter>
