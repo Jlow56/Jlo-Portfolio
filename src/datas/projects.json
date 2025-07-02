@@ -6,14 +6,14 @@
         "name": "Mon Vieux Grimoire",        
         "cover": "/photos-projets/Mon-Vieux-Grimoire/Accueil.png",
         "image": [
-            "/photos-projets/Mon-Vieux-Grimoire/Accueil.png",
-            "/photos-projets/Mon-Vieux-Grimoire/Add-book-emppty.png",
-            "/photos-projets/Mon-Vieux-Grimoire/Add-book-preview.png",
-            "/photos-projets/Mon-Vieux-Grimoire/Book-page.png",
-            "/photos-projets/Mon-Vieux-Grimoire/Login.png", 
-            "/photos-projets/Mon-Vieux-Grimoire/Succes-add-book.png",
-            "/photos-projets/Mon-Vieux-Grimoire/Succes-delet.png"
-        ],
+                    "/photos-projets/Mon-Vieux-Grimoire/Accueil.png",
+                    "/photos-projets/Mon-Vieux-Grimoire/Add-book-emppty.png",
+                    "/photos-projets/Mon-Vieux-Grimoire/Add-book-preview.png",
+                    "/photos-projets/Mon-Vieux-Grimoire/Book-page.png",
+                    "/photos-projets/Mon-Vieux-Grimoire/Login.png", 
+                    "/photos-projets/Mon-Vieux-Grimoire/Succes-add-book.png",
+                    "/photos-projets/Mon-Vieux-Grimoire/Succes-delet.png"
+                ],
         "link": "coming soon", 
         "git-hub": "https://github.com/Jlow56/Mon-Vieux-Grimoire/tree/main",
         "description": "L’objectif du site Mon Vieux Grimoire est de donner la possibilité aux lecteurs de créer des livres, de les noter et de consulter les livres existants ainsi que leurs notes.", 
@@ -27,14 +27,14 @@
         "name": "kasa",        
         "cover": "/photos-projets/Kasa/home.png",
         "image": [
-            "/photos-projets/Kasa/home.png",
-            "/photos-projets/Kasa/about.png", 
-            "/photos-projets/Kasa/housing-card.png"
-        ],
-        "link": "coming soon",   
+                    "/photos-projets/Kasa/home.png",
+                    "/photos-projets/Kasa/about.png", 
+                    "/photos-projets/Kasa/housing-card.png"
+                ],
+        "link": "https://kasa-lake-eight.vercel.app/",   
         "git-hub": "https://github.com/Jlow56/kasa",
         "description": "Le site de Kasa a été codé il y a maintenant plus de 10 ans. Une refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté back-end, et React côté front-end.", 
-        "problematic": "Comment fonctionne React et la navigation entre les pages ? Comment gérer les données des logements et les afficher dynamiquement ?",
+        "problematic": "Comment fonctionne React et la navigation entre les pages ? Comment gérer les données des logements et les afficher dynamiquement ? Comment fonctionne SCSS et Vite.js ?",
         "solution": " J'ai utilisé Vite.js pour le bundling et la gestion des ressources, ainsi que SCSS pour le style. Les données des logements sont gérées via un fichier JSON local, permettant une navigation fluide entre les pages sans rechargement complet de la page. J'ai mis en place des composants réutilisables pour les cartes de logement et les pages de détails, facilitant ainsi la maintenance et l'évolution de l'application."
     },   
     {
@@ -43,7 +43,16 @@
         "technologies": ["HTML", "SCSS", "JavaScript", "SEO"],
         "name": "Nina-Carducci",        
         "cover": "/photos-projets/Nina-Carducci/Accueil.png",
-        "image": "/photos-projets/Nina-Carducci/Accueil.png",
+        "image": [
+                    "/photos-projets/Nina-Carducci/Accueil.png",
+                    "/photos-projets/Nina-Carducci/Portfolio.png",
+                    "/photos-projets/Nina-Carducci/Portfolio-2.png",
+                    "/photos-projets/Nina-Carducci/Services-Contact.png",
+                    "/photos-projets/Nina-Carducci/Slider.png", 
+                    "/photos-projets/Nina-Carducci/Avant-intervention.png",
+                    "/photos-projets/Nina-Carducci/Apres-intervention.png",
+                    "/photos-projets/Nina-Carducci/Nina-Carducci.gif"
+                ],
         "link": "https://jlow56.github.io/Nina-Carducci/",
         "git-hub": "https://www.google.com",
         "pdf": "/photos-projets/Nina-Carducci/JEAN_Jean-Louis_2_Rapport_Doptimisation_032025.pdf",
@@ -57,7 +66,7 @@
         "technologies": ["HTML", "CSS"],
         "name": "Booki",        
         "cover": "/photos-projets/Booki/Accueil.png",
-        "image": "/photos-projets/Booki/Accueil.png",
+        "image": ["/photos-projets/Booki/Accueil.png"],
         "link": "https://jlow56.github.io/Booki/?search=#",
         "git-hub": "https://github.com/Jlow56/Booki",
         "description": "Développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.", 
@@ -67,13 +76,24 @@
     {
         "id": "5",
         "category": "Site-web",
-        "technologies": ["HTML", "SCSS", "JavaScript", "Figma","Kamban"],
+        "technologies": ["HTML", "SCSS", "JavaScript", "Figma", "Swagger", "Fetch", "Token"],
         "name": "Portfolio-architecte-sophie-bluel",        
-        "cover": "image1.jpg",
-        "image": "image1.jpg",
-        "link": "coming soon",
-        "git-hub": "https://www.google.com",
-        "description": "Description of Project 1"
+        "cover": "phtos-projets/portfolio-architecte-sophie-bluel/Accueil.png",
+        "image": [
+                    "phtos-projets/portfolio-architecte-sophie-bluel/Accueil.png",
+                    "phtos-projets/portfolio-architecte-sophie-bluel/Accueil2.png",
+                    "phtos-projets/portfolio-architecte-sophie-bluel/login.png",
+                    "phtos-projets/portfolio-architecte-sophie-bluel/Accueil-mode-edition.png",
+                    "phtos-projets/portfolio-architecte-sophie-bluel/Modal-sup.png",
+                    "phtos-projets/portfolio-architecte-sophie-bluel/Modal-form.png", 
+                    "phtos-projets/portfolio-architecte-sophie-bluel/Modal-form-2.png"
+                ],
+        "link": "https://portfolio-architecte-sophie-bluel-steel.vercel.app/",
+        "backend": "https://portfolio-architecte-sophie-bluel-cx5e.onrender.com/",
+        "git-hub": "https://github.com/Jlow56/Portfolio-architecte-sophie-bluel",
+        "description": "Dans le cadre de votre mission chez ArchiWebos, vous allez développer la partie Front‑End d’un site portfolio pour une architecte d’intérieur. Ce projet a pour objectif de : -> Créer une page web dynamique en JavaScript. -> Intégrer une page de connexion selon la maquette.-> Développer une modale d’upload et gérer la suppression et l’ajout de médias.-> Communiquer avec une API fournie (Node.js/Express).", 
+        "problematic": "intégrer la page de connexion conforme à la maquette. Comment communiqué avec l'API et gérer l'authentification ? Comment faire apparître une modale utiliser une modale ? Comment ajouter, afficher, supprimer une image en fonction de la catégorie ? Comment upload une image et la prévisualiser?",
+        "solution":"Pour répondre à ce projet parmi ceux des plus complexes, j'ai appris à utiliser fectch en utilisant les routes indiquées dans la documentation Swagger, avec l'utilisation d'await. J'ai appris à utiliser les en-têtes avec les méthodes, les headers et le body à configurer pour l'authentification. La mise en place et l'utilisation des regex. Le stockage de tokens dans le local storage. La gestion des modalités. La gestion des images. Le traitement des images. La création d'éléments dynamiques avec des données en JavaScript, mais surtout à organiser et à commenter mon code le plus clairement possible ;)."
     },
     {
         "id": "6",

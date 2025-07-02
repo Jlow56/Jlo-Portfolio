@@ -32,7 +32,7 @@ function ProjectContent({ project }) {
                             </Collapse> 
                         </div>
                         <div className="collapse-container">
-                            <Collapse title='Poblemematique'content={project.problematic}>
+                            <Collapse title='Problématique'content={project.problematic}>
                                 <p className="project-p">{project.problematic}</p>
                             </Collapse>
                         </div>
