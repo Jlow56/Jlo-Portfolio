@@ -69,7 +69,7 @@
         "image": ["/photos-projets/Booki/Accueil.png"],
         "link": "https://jlow56.github.io/Booki/?search=#",
         "git-hub": "https://github.com/Jlow56/Booki",
-        "description": "Développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.", 
+        "description": "Développer un site Internet qui permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix.", 
         "problematic": "Comment assurer que le site est responsive et accessible sur tous les appareils ?",
         "solution": "J'ai utilisé des techniques de responsive design et des média-queries pour rendre le site accessible et responsive pour assurer une expérience utilisateur optimale sur tous les appareils."
     },
