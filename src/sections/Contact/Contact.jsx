@@ -1,9 +1,10 @@
 import React from 'react';
+import './Contact.scss';
 
 const Contact = () => (
   <section id="contact" aria-label="Contact">
     <h2>Contact</h2>
-    <form action="https://formsubmit.co/jlowdev56@gmail.com" method="POST">
+    <form action="https://formsubmit.co/jlowdev56@gmail.com" method="POST" className='contact-form'>
         {/* ─── Anti‑spam et redirections ─── */}
         <input type="hidden" name="_captcha" value="true" />  
         {/* Active reCAPTCHA automatiquement */}
@@ -25,7 +26,7 @@ const Contact = () => (
         <label htmlFor="message">Message</label>
         <textarea name="message" id="message" rows="5" required />
 
-        <button type="submit">Envoyer</button>
+        <button type="submit" className='btn-contact'>Envoyer</button>
         </form>
   </section>
 );

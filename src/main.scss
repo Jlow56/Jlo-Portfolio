@@ -17,7 +17,6 @@ html {
 
     #root {
       margin: 0 auto;
-      padding: 4rem 5em;
       text-align: center;
       min-height: 100vh;
     
@@ -31,7 +30,6 @@ html {
 
         section:not(:first-of-type) {
           position: relative;
-          padding-top: 3rem; // espace pour le trait
 
         &::before {
             content: '';

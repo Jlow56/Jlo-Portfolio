@@ -4,6 +4,7 @@
     grid-template-columns: repeat(auto-fit, minmax(422px, 1fr));
     gap: 40px;
     object-fit: cover;
+    padding-inline: 4rem;
 }
 
 .project-card {

@@ -7,7 +7,7 @@
     .vertical-timeline-element-content-arrow {
         border-right: 16px solid var(--text-color);
         
-    } 
+    }   
 }
 .vertical-timeline::before {
     background: var(--text-color);
@@ -23,3 +23,8 @@
 .vertical-timeline-element-icon.bounce-in{
     background-color: var(--background-verticale-icon);
 }
+
+.vertical-timeline-element-content p {
+        color: var(--text-color);
+        font-size: 1.1rem;
+    }

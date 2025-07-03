@@ -2,7 +2,8 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
+    padding: 2rem 40rem;
 
     input {
         width: 100%;
@@ -12,6 +13,52 @@ form {
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
+         font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    label {
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+
+    textarea#message {
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 4px solid var(--bg-btn-cv-start);
+        border-radius: 20px;
+        background-color: transparent;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--text-color);
+    }
+
+    button.btn-contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        height: auto;
+        gap: 0.5em;
+        padding: 0.5em 1.2em;
+        font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        border: 3px solid transparent;
+        border-radius: 15px;
+        background: linear-gradient(90deg, var(--bg-btn-cv-start), var(--bg-btn-cv-end)) padding-box, linear-gradient(90deg, var(--border-btn-cv-start), var(--border-btn-cv-end)) border-box;
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+        color: var(--text-color-2);
+        cursor: pointer;
+        transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+        text-decoration: none;
+    }
+
+    button.btn-contact {
+        transform: scale(1.05);
     }
 }
 
