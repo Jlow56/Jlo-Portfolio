@@ -66,7 +66,12 @@
         "technologies": ["HTML", "CSS"],
         "name": "Booki",        
         "cover": "/photos-projets/Booki/Accueil.png",
-        "image": ["/photos-projets/Booki/Accueil.png"],
+        "image": [
+                    "/photos-projets/Booki/Accueil.png",
+                    "/photos-projets/Booki/Accueil.png",
+                    "/photos-projets/Booki/Accueil.png",
+                    "/photos-projets/Booki/Accueil.png"
+                ],
         "link": "https://jlow56.github.io/Booki/?search=#",
         "git-hub": "https://github.com/Jlow56/Booki",
         "description": "Développer un site Internet qui permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix.", 
@@ -79,7 +84,7 @@
         "technologies": ["HTML", "SCSS", "JavaScript", "Figma", "Swagger", "Fetch", "Token"],
         "name": "Portfolio-sophie-bluel",        
         "cover": "photos-projets/Portfolio-sophie-bluel/Accueil.png",
-        "image": [
+        "image":[
                     "photos-projets/Portfolio-sophie-bluel/Accueil.png",
                     "photos-projets/Portfolio-sophie-bluel/Accueil-2.png",
                     "photos-projets/Portfolio-sophie-bluel/Login.png",
@@ -100,13 +105,36 @@
         "category": "site-web",
         "technologies": ["HTML", "SCSS", "JavaScript", "React"],
         "name": "Menu Maker by Qwenta",        
-        "cover": "image1.jpg",
-        "image": "image1.jpg",
-        "link": "https://www.google.com",
-        "git-hub": "https://www.google.com",
-        "description": "Description of Project 7",
-        "problematic": "Comment assurer que le site est responsive et accessible sur tous les appareils ?",
-        "solution":""
+        "cover": "photos-projets/Menu-maker/Trello-1.png",
+        "image": [
+                    "photos-projets/Menu-maker/home.png",
+                    "photos-projets/Menu-maker/auth.png",
+                    "photos-projets/Dashboard-auth.png",
+                    "photos-projets/add-cat.png",
+                    "photos-projets/add-dish.png",
+                    "photos-projets/custom-menu.png",
+                    "photos-projets/custom-dishes.png",
+                    "photos-projets/preview.png",
+                    "photos-projets/result.png",
+                    "photos-projets/exportpng",
+                    "photos-projets/Menu-maker/Trello-1.png",
+                    "photos-projets/Menu-maker/carte.png",
+                    "photos-projets/Menu-maker/card-details.png",
+                    "photos-projets/Menu-maker/veille-js.png",
+                    "photos-projets/Menu-maker/veille-mongo.png",
+                    "photos-projets/Menu-maker/veille-react.png",
+                    "photos-projets/Menu-maker/veille-sql.png"
+                ],
+        "git-hub": "https://github.com/Jlow56/Menu-Maker-by-Qwenta/tree/main",
+        "link": "https://trello.com/b/RqpaCahF/vp7-menu-maker-by-qwenta",
+         "pdf": [
+                    "pdf/Menu-Maker/Jean-louis-JEAN-1-spécifictions-techniques-06-25.pdf",
+                    "pdf/Menu-Maker/Jean-louis-JEAN-3-veille-06-25.pdf",
+                    "pdf/Menu-Maker/Jean-louis-JEAN-4-presentation-06-25.pdf"
+                ],
+        "description": "L’objectif de ce projet est de planifier le développement du site Menu Maker, une application web permettant aux restaurateurs de créer, personnaliser et diffuser leur menu facilement, sans coder.",
+        "problematic": "Analyser les besoins du client. Identifier et créerles solutions techniques en réalisant un support technique. Structurer le travail de l’équipe de développement. Créer un outil de veille technologique. Organiser les tâches dans un tableau Kanban. Présenter la solution technique.",
+        "solution":"J'ai mis en place un support technique expliquant mes différents choix, un tableau Kanban pour mieux organiser mes tâches et un outil de veille technologique pour suivre mes projets avec des phases de sprints. Un support de veille technologique et la présentation du proje regroupand les principales fonctionnalités."
 
     },
     {
@@ -114,12 +142,19 @@
         "category": "site-web",
         "technologies": ["HTML", "CSS"],
         "name": "Robbie-Lens-Photographie",        
-        "cover": "image1.jpg",
-        "image": "image1.jpg",
+        "cover": "photos-projets/Robbie-lens-photographie/openclassrooms-le-projet-accueil.png",
+        "image": [
+                    "photos-projets/Robbie-lens-photographie/openclassrooms-le-projet-accueil.png", 
+                    "photos-projets/Robbie-lens-photographie/openclassrooms-le-projet-Apropos.png", 
+                    "photos-projets/Robbie-lens-photographie/openclassrooms-le-projet-Portfolio.png", 
+                    "photos-projets/Robbie-lens-photographie/Portfolio-1.png", 
+                    "photos-projets/Robbie-lens-photographie/Portfolio-2.png", 
+                    "photos-projets/Robbie-lens-photographie/Single-photo.png"
+                ],
         "link": "https://jlow56.github.io/Robbie-Lens-Photographie/",
         "git-hub": "https://github.com/Jlow56/Robbie-Lens-Photographie",
-        "description": "Description of Project 7",
-        "problematic": "Comment créer un site web static avec HTML et CSS ? Comment le rendree sponsive? Quelles sont les princpales balises Html?",
-        "solution":"Durant cette formation j'ai appris l'usage des balises sémantique adaptées au contenu de la page. J'ai aussi appris comment rendre le site responsive et comment utiliser les media queries pour assurer une bonne experience utilisateur. l'objectif était de comprendre les bases fondamentales du HTML et du CSS avec la réalisation de sites web statiques. "
+        "description": "Apprendre les bases de HTML et de CSS pour créer un site web statique.",
+        "problematic": "Comment créer un site web static avec HTML et CSS ? Comment le rendre responsive? Quelles sont les princpales balises Html? Qu'est que la sématique? Comment utiliser les media queries? Comment utiliser les classes et les id? Comment utiliser les pseudo classes et les pseudo elements?",
+        "solution":"Durant cette formation j'ai appris l'usage des balises sémantique adaptées au contenu de la page. J'ai aussi appris comment rendre le site responsive et comment utiliser les media queries pour assurer une bonne experience utilisateur sur tous les appareils. L'objectif était de comprendre les bases fondamentales du HTML et du CSS avec la réalisation d'un sites web statiques en parallèle. "
     }
 ]
