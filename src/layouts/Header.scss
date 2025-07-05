@@ -15,6 +15,14 @@
             align-items: center;
             gap: 3rem;
 
+            .logo {
+                width: 3.125rem;
+                
+                .github-logo {
+                    width: 4.125rem;
+                }
+            }
+
             .header-nav-button {
                 display: flex;
                 align-items: center;
@@ -36,11 +44,13 @@
                     transform: scale(1.05);
                     color: var(--accent-color);
                 }
+
+                
             }
         }
 
         .logo-JlowDev {
-            height: 12em;
+            height: 10em;
             will-change: filter;
             transition: filter 300ms;
         }

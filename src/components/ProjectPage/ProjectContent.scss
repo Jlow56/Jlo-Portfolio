@@ -35,9 +35,28 @@
             display: flex;
             flex-direction: column;
             text-align: right;
+            align-items:flex-end;
             gap: 2rem;
-            padding:2rem 4rem;
+            padding-inline: 4rem;
             width: 50%;
+            
+            .link-container.website{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1rem;
+
+                .internet-logo {
+                    width: 4rem;
+                }
+            }
+
+            .link-container.github {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1rem;
+            }
 
             a > p {
                 padding: 0;

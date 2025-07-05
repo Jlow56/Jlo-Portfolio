@@ -10,16 +10,19 @@
   --nav-texte-color: #14223b;
   --nav-border-color: linear-gradient(90deg, #000000, #909090);
   --color-toggle-dark: #fcfcfc;
+  --nav-linkedin-img: url('/src/assets/logo/Header/linkedin.png');
+  --nav-github-img: url('/src/assets/logo/Header/github-theme-light.png');
 
   // Section
 
   // all
   --bg-color-1: #ffffff;
   --bg-color-2: #edf0f2;
+  --bg-color-3: black;
   --section-border-color:linear-gradient(90deg, #000000, #bbbbbb);
 
   //home
-  --bg-img: url('/src/assets/img/home/home-line-background-white.svg');
+  --bg-img-home: url('/src/assets/img/home/home-line-background-white.svg');
   --bg-btn-cv-start: #000000; /* couleur de fond */
   --bg-btn-cv-end: #737373; /* couleur de fond */
   --border-btn-cv-start: #e7e7e7;
@@ -42,6 +45,11 @@
   //container
   --border-top-container-start: #b3b3b3;
   --border-top-container-end: #464545;
+
+  //contact
+  --border-color-toggle-send: linear-gradient(90deg, #b3b3b3, #464545);
+  --bg-color-toggle-send: linear-gradient(90deg, #b3b3b3, #464545);
+  --bg-img-contact: url('/src/assets/img/contact/contact-background-light.svg');
 }
 
 /* Thème sombre */
@@ -49,10 +57,12 @@
   --nav-border-color: linear-gradient(90deg, #5170ff, #ff66c4);
   --bg-color-1: #14223b;
   --bg-color-2: #101728;
+  --bg-color-3: white;
   --text-color: #ffffff;
+  --text-color-2: #000000;
   --accent-color: #57ffdc;
   --color-toggle-light: #f6d447;
-  --bg-img: url('/src/assets/img/home/home-line-background-dark.svg');
+  --bg-img-home: url('/src/assets/img/home/home-line-background-dark.svg');
   --bg-btn-cv-start: #004aad;
   --bg-btn-cv-end: #cb6ce6;
   --border-btn-cv-start: #8c52ff;
@@ -62,4 +72,10 @@
   --border-color-toggle-cv: linear-gradient(90deg, #8c52ff, #ff914d);
   --border-top-container-start: #ff5757;
   --border-top-container-end: #bff109;
-}
+
+  //nav
+  --nav-github-img: url('/src/assets/logo/Header/github-theme-neon.png');
+
+  //contact
+  --bg-img-contact: url('/src/assets/img/contact/contact-background-dark.svg');
+} 

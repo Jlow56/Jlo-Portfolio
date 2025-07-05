@@ -1,65 +1,70 @@
-form {
+#contact {
+   
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    padding: 2rem 40rem;
+    
+    
 
-    input {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-         font-size: 1.1rem;
-        font-weight: 600;
-    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 40rem;
+        background-image: var(--bg-img-contact);
+        background-size: contain;
+        background-repeat: no-repeat;
 
-    label {
-        font-weight: bold;
-        font-size: 1.6rem;
-    }
+        input {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border-radius: 15px;
+            box-sizing: border-box;
+            font-size: 1.1rem;
+            font-weight: 600;
+            background-color: var(--bg-color-3);
+            color: var(--text-color-2);
+        }
 
-    textarea#message {
-        width: 100%;
-        height: 150px;
-        padding: 10px;
-        box-sizing: border-box;
-        border: 4px solid var(--bg-btn-cv-start);
-        border-radius: 20px;
-        background-color: transparent;
-        font-size: 1.1rem;
-        font-weight: 600;
-        color: var(--text-color);
-    }
+        label {
+            font-weight: bold;
+            font-size: 1.6rem;
+        }
 
-    button.btn-contact {
+        textarea#message {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            background-color: var(--bg-color-3);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-color-2);
+        }
+
+    .btn-contact {
         display: flex;
         align-items: center;
         justify-content: center;
         width: fit-content;
         height: auto;
-        gap: 0.5em;
         padding: 0.5em 1.2em;
-        font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
         font-size: 1.2rem;
         font-weight: 700;
-        border: 3px solid transparent;
+        border: 3px solid var(--text-color);
         border-radius: 15px;
-        background: linear-gradient(90deg, var(--bg-btn-cv-start), var(--bg-btn-cv-end)) padding-box, linear-gradient(90deg, var(--border-btn-cv-start), var(--border-btn-cv-end)) border-box;
-        background-origin: border-box;
-        background-clip: padding-box, border-box;
-        color: var(--text-color-2);
+        color: var(--text-color-1);
         cursor: pointer;
-        transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
         text-decoration: none;
+        background-color: transparent  ;
     }
 
-    button.btn-contact {
-        transform: scale(1.05);
+        button.btn-contact {
+            transform: scale(1.05);
+        }
     }
 }
-
 

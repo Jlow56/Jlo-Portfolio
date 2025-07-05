@@ -2,11 +2,13 @@ import { useContext } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import ThemeToggleButton from '../components/Header/ThemeToggleButton';
 import { ThemeContext } from '../context/ThemeContext';
-import './Header.scss';
 
-// 👉 Importe directement les deux SVG
 import logoLight from '../assets/logo/JlowDev/Logo-Gris-Blanc.svg';
-import logoDark  from '../assets/logo/JlowDev/Logo-theme-dark.svg';
+import logoDark from '../assets/logo/JlowDev/Logo-theme-dark.svg';
+
+import logoGithubLight from '../assets/logo/Header/github-theme-light.png';
+import logoGithubDark from '../assets/logo/Header/github-theme-neon.png';
+import logoLinkedIn from '../assets/logo/Header/linkedin.png'; 
 
 import './Header.scss';
 
@@ -15,8 +17,8 @@ function Header() {
   const navigate = useNavigate();
   const { isDark, toggleTheme } = useContext(ThemeContext);
 
-  // Choix du logo selon le thème
   const logo = isDark ? logoDark : logoLight;
+  const githubLogo = isDark ? logoGithubDark : logoGithubLight;
 
   const scrollToSection = (id) => {
     const el = document.getElementById(id);
@@ -37,18 +39,32 @@ function Header() {
       <div className="header-container">
         <div className="header-logo logo-rotate">
           <a href="/" onClick={(e) => { e.preventDefault(); navigate('/'); }}>
-            <img src={logo} alt="Logo JlowDev " className='logo-JlowDev '/>
+            <img src={logo} alt="Logo JlowDev" className='logo-JlowDev' />
           </a>
         </div>
 
         <nav className="header-nav" aria-label="Navigation principale">
           <ul className="header-nav-ul">
+
+            <li className='header-li'>
+              <a href="https://github.com/Jlow56" className="header-nav-link logo" target="_blank" rel="noopener noreferrer">
+                <img src={githubLogo} alt="GitHub" className='github-logo' />
+              </a>
+            </li>
+
+            <li className='header-li'>
+              <a href="https://www.linkedin.com/in/jean-louis-jean-bienvenu/" className="header-nav-link" target="_blank" rel="noopener noreferrer">
+                <img src={logoLinkedIn} alt="LinkedIn" className='linkedin-logo logo' />
+              </a>
+            </li>
+
             <li className='header-li'><button className="header-nav-button" onClick={() => handleClick('presentation')}>Présentation</button></li>
             <li className='header-li'><button className="header-nav-button" onClick={() => handleClick('skills')}>Compétences</button></li>
             <li className='header-li'><button className="header-nav-button" onClick={() => handleClick('projects')}>Projets</button></li>
             <li className='header-li'><button className="header-nav-button" onClick={() => handleClick('education')}>Formations</button></li>
             <li className='header-li'><button className="header-nav-button" onClick={() => handleClick('contact')}>Contact</button></li>
             <li className='header-li'><ThemeToggleButton isDark={isDark} onChange={toggleTheme} /></li>
+
           </ul>
         </nav>
       </div>

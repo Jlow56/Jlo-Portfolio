@@ -1,6 +1,9 @@
     .skills{
         font-size: 1rem;
         padding-block: 3rem;
+        gap: 8rem;
+        display: flex;
+        flex-direction: column;
     
     .skills-container {
         display: flex;
