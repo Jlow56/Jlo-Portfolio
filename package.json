@@ -36,7 +36,7 @@
     "globals": "^16.0.0",
     "npm-force-resolutions": "^0.0.10",
     "sass": "^1.89.2",
-    "vite": "^5.4.19"
+    "vite": "^7.0.0"
   },
   "browserslist": [
     ">0.2%",
