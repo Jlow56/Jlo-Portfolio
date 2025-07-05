@@ -27,14 +27,14 @@ function Home() {
                     <div className="cta-cv">
                         <a href="https://www.canva.com/design/DAF_8RyGtKs/_19JftruejbOLl7rH1VGmA/edit?utm_content=DAF_8RyGtKs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" className="btn btn-cv" target="_blank" rel="noopener noreferrer">
                             <span>Voir mon CV en ligne</span>
-                            <img src={downloadLogo} alt="Download" className="download-icon" />
+                            <img src={downloadLogo} alt="Download" className="download-icon"/>
                         </a>
                     </div>
                     
                 </div>
                 <div className="home-right-container">
                     <div className="home-right-content">
-                        <img src={homeCircleBackground} alt="Décor du fond d'écran" />
+                        <img src={homeCircleBackground} alt="Décor du fond d'écran" className='img-home-circle'/>
                     </div>
                 </div>
             </section>

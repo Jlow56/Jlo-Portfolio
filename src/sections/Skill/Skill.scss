@@ -57,3 +57,40 @@
         }
     }
 }
+
+@media screen and (max-width: 425px) {
+    .skills{
+        gap: 2rem;
+        .skills-container {
+            flex-direction: column;
+            align-items: center;
+
+            .skills-item {
+                width: 80%;
+                height: auto;
+                
+                h3{
+                    font-size: 1.1rem;
+                }
+                
+                .skill-list{
+                    padding: 0.5rem;
+                }
+
+                .logos-slide img{
+                    height: 40px;
+                }
+            }
+        }
+        iframe{
+            width: 90%;
+            height: auto;
+            height: 16rem;
+
+            .c-hOoPCq{
+                display: none;
+            }
+        }
+    }
+    
+}

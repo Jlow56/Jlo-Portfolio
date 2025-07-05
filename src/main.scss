@@ -26,8 +26,6 @@ html {
         flex : 1;
         flex-direction: column;
 
-        
-
         section:not(:first-of-type) {
           position: relative;
 
@@ -52,6 +50,32 @@ html {
           list-style: none;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #root{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 320px;
+
+    main {
+      align-items: center;
+      gap: 2rem !important;
+      max-width: 320px;
+
+      section {
+        width: fit-content;
+        padding-block: 1rem;
+        max-width: 320px;
+
+      }
+      
+      h2 {
+          font-size: 1.1rem !important;
+        }
     }
   }
 }

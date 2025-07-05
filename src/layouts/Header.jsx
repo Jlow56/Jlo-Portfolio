@@ -1,5 +1,6 @@
-import { useContext } from 'react';
+import { useContext, useEffect, useRef } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+
 import ThemeToggleButton from '../components/Header/ThemeToggleButton';
 import { ThemeContext } from '../context/ThemeContext';
 
@@ -16,9 +17,43 @@ function Header() {
   const location = useLocation();
   const navigate = useNavigate();
   const { isDark, toggleTheme } = useContext(ThemeContext);
+  const headerRef = useRef(null);
 
   const logo = isDark ? logoDark : logoLight;
   const githubLogo = isDark ? logoGithubDark : logoGithubLight;
+  
+   useEffect(() => {
+    let scrollTimeout;
+
+    const handleScroll = () => {
+      const el = headerRef.current;
+      if (!el) return;
+
+      if (window.scrollY > 40) {
+        // Dès que scroll > 40px : fond aqua, opacité 1
+        el.style.backgroundColor = 'aqua';
+        el.style.opacity = '1';
+
+        if (scrollTimeout) clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+          if (el) el.style.opacity = '0.9';
+        }, 200);
+      } else {
+        // Sous le seuil : transparent, opacité 1
+        el.style.backgroundColor = 'transparent';
+        el.style.opacity = '1';
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    // Initial trigger
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      clearTimeout(scrollTimeout);
+    };
+  }, []);
 
   const scrollToSection = (id) => {
     const el = document.getElementById(id);
@@ -33,6 +68,23 @@ function Header() {
       setTimeout(() => scrollToSection(sectionId), 100);
     }
   };
+
+  const header = document.getElementById('header');
+let scrollTimeout;
+
+window.addEventListener('scroll', () => {
+  // Appliquer le fond aqua pendant le scroll
+  header.style.backgroundColor = 'aqua';
+  header.style.opacity = '1';
+
+  // Réinitialise le timer s’il existe
+  if (scrollTimeout) clearTimeout(scrollTimeout);
+
+  // Lancer un timer : après 200ms sans scroll, appliquer l’opacité 0.9
+  scrollTimeout = setTimeout(() => {
+    header.style.opacity = '0.9';
+  }, 200);
+});
 
   return (
     <header className="header">

@@ -43,7 +43,7 @@ function Project() {
 
   return (
     <section className="project-section" id="projects" aria-label="section projets du portfolio">
-        <div className="projects">
+        <div className="projects-div">
           <h2 className="projects-title">Mes projets</h2>
           <FilterButtons techList={uniqueTechs} activeFilter={activeFilter} onFilterChange={handleFilterChange}/>
           <div className="projects-container">

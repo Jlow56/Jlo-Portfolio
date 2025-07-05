@@ -43,3 +43,30 @@
     font-size: 0.9rem;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .project-section {
+    max-width: 320px;
+    display: flex;
+
+    .projects-div {
+      max-width: 320px;
+
+      .projects-container {
+        max-width: 320px;
+        padding-inline: 1rem;
+        grid-template-columns: none;
+
+        .project-card {
+          max-width: 320px;
+          text-decoration: none;
+
+          .project-title {
+            font-size: 1rem;
+            
+          }
+        }
+      }
+    }
+  }
+}
