@@ -82,29 +82,68 @@
     }
 }
 
-@media screen and (width >=1250) {
-    .bottom-container {
-        width: 50%;
+
+@media screen and (max-width: 768px) {
+  
+    .project-header-left  {
+        font-size: 1.7rem !important;
+        padding-inline: 0 !important;
+      
     }
-    
+
+    .project-content .top-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-header-right{
+        padding-inline: 0 !important;
+
+         .link-container {
+            gap : 0 !important;
+        }
+        .internet-logo {
+            width: 3rem !important;
+        }
+
+        .github-logo {
+            width: 3rem;
+        }
+    }
 }
 
-@media screen and (width <=425px) {
+@media screen and (max-width: 425px) {
+  
+    .top-container {
+        padding: 1rem 2rem !important;
+        max-width: 320px !important;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .project-header-left h2 {
+    font-size: 1rem !important;
+      
+  }
     .collapse-header-title {
-        font-size: 13px !important;
-    }
+    font-size: 13px !important;
+  }
 
-    .collapse-header-icon {
-        font-size:16px !important;
-    }
+  .collapse-header-icon {
+    font-size: 16px !important;
+  }
 
-    .housing-equipments-list {
-        font-size: 12px !important;
-    }
+  .housing-equipments-list,
+  .housing-description-p {
+    font-size: 12px !important;
+  }
+}
 
-    .housing-description-p {
-        font-size: 12px !important;
-    }
-    
+@media screen and (max-width: 375px) {
+  .bottom-container {
+    padding: 6rem 2rem !important;
+  }
 }
 

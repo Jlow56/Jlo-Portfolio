@@ -58,6 +58,84 @@
     }
 }
 
+.miro-container {
+  /* largeur et centrage du conteneur si tu veux */
+  max-width: 900px;
+  margin: 0 auto;
+  /* ou full width selon besoin */
+}
+
+.miro-embed {
+  display: block;      /* supprime l’espace en bas de l’iframe par défaut */
+  border: none;        /* retire la bordure */
+  overflow: hidden;    /* équivalent à scrolling="no" */
+}
+
+@media screen and (max-width: 1440px) {
+    .skills {
+        gap: 2rem;
+
+        .skills-container{
+            gap: 4rem;
+            padding: 2rem;
+        } 
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .skills{
+        
+
+        .skills-container {
+            flex-direction:row;
+            align-items: center;
+            gap: 1rem !important;
+
+             .skills-item {
+                width: 19rem;
+                height: 610px;
+                
+                h3{
+                    font-size: 1.5rem;
+                }
+                
+                .skill-list{
+                    padding: 0.5rem;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .skills{
+        gap: 3rem;
+        align-items: center;
+        max-width: 768px;
+
+        .skills-container {
+            flex-direction: column;
+            align-items: center;
+
+            .skills-item h3 {
+                font-size: 1.5rem;
+            }
+            
+            .skill-list{
+                padding: 0.5rem;
+            }
+        }
+    }
+
+     iframe{
+        width: 30rem;
+        height: 30rem;
+    }
+    
+}
+
 @media screen and (max-width: 425px) {
     .skills{
         gap: 2rem;
@@ -66,7 +144,7 @@
             align-items: center;
 
             .skills-item {
-                width: 80%;
+                width: 270px;
                 height: auto;
                 
                 h3{

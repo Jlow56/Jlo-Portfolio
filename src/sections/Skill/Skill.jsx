@@ -47,9 +47,18 @@ function Skill() {
           </div>
         ))}
       </div>
-      <div className="miro-container">
-        <iframe width="900" height="600" src="https://miro.com/app/live-embed/uXjVIhudLoQ=/?embedMode=view_only_without_ui&moveToViewport=-1820,-377,3454,1677&embedId=326547679091" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
-      </div>
+       <div className="miro-container">
+      <iframe
+        className="miro-embed"
+        title="Board Miro intégré"
+        width="900"
+        height="600"
+        src="https://miro.com/app/live-embed/uXjVIhudLoQ=/?focusWidget=3458764633748795473&embedMode=view_only_without_ui&embedId=826610631098"
+        frameBorder="0"
+        allow="fullscreen; clipboard-read; clipboard-write"
+        allowFullScreen
+      />
+    </div>
     </section>
   );
 }

@@ -65,43 +65,39 @@
     }
 }
 
-@media screen and (width <= 1024px) {
-    #contact {
-        form {
-            padding: 2rem 20rem;
-        }
+#contact {
+  form {
+    padding: 2rem 35rem;
+
+    @media (max-width: 1440px) {
+      padding: 2rem 30rem;
     }
-    
-}
 
-@media screen and (width <= 768px) {
-    #contact {
-        form {
-            padding: 2rem 10rem;
-        }
+    @media (max-width: 1024px) {
+      padding: 2rem 20rem;
     }
-    
-}
 
-@media screen and (width <= 425px) {
-    #contact {
-        form {
-            background-size: cover;
-            padding: 2rem 2rem;
-            gap: 1rem;
-
-            label {
-                font-size: 1.1rem;
-            }
-
-            input {
-                font-size: 0.9rem;
-                margin: 0;
-            }
-            .btn-contact {
-                font-size: 1rem;
-            }
-        }
+    @media (max-width: 768px) {
+      padding: 2rem 10rem;
     }
-    
+
+    @media (max-width: 425px) {
+      background-size: cover;
+      padding: 2rem 2rem;
+      gap: 1rem;
+
+      label {
+        font-size: 1.1rem;
+      }
+
+      input {
+        font-size: 0.9rem;
+        margin: 0;
+      }
+
+      .btn-contact {
+        font-size: 1rem;
+      }
+    }
+  }
 }

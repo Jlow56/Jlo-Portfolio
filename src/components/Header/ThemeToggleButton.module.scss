@@ -3,8 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
-  height: 35px;
+  width: 5rem;
+  height: 2.188rem;
   padding: 4px 8px;
   border-radius: 35px;
   cursor: pointer;
@@ -25,8 +25,8 @@
 
 .container input + div {
   border-radius: 50%;
-  width: 26px;
-  height: 26px;
+  width: 1.625rem;
+  height: 1.625rem;
   position: relative;
   box-shadow: inset 8px -8px 0 0 var(--color-toggle-dark);
   transform: scale(1) rotate(-2deg);
