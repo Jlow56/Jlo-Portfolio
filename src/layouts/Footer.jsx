@@ -5,7 +5,7 @@ function Footer() {
         <footer>
             <div className="footer-container">
                 <div className="footer-content">
-                    <p className="footer-text">© 2025 All rights reserved.</p>
+                    <p className="footer-text">© 2025 Jlow-Dev. Tous droits réservés.</p>
                 </div>
             </div>
         </footer>
