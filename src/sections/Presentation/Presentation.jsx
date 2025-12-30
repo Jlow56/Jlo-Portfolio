@@ -17,7 +17,7 @@ const Presentation = () => {
                     domaines de la restauration, de l'armée de terre et de l'éducation nationale. <br/>
 
                     Je suis à la recherche d’une entreprise pour un contrat de professionnalisation, disponible à partir de mi-juillet 2025 afin d'acquérir de nouvelles compétences 
-                    et obtenir un bachelor en développement web avec SUP DE VINCI Rennes. Pour en savoir plus sur la formation c'est <a href="https://www.supdevinci.fr/formation/bachelor-developpeur-web-et-mobile" target="_blank" rel="noopener noreferrer">ici</a><br/>
+                    et obtenir un bachelor en développement web avec SUP DE VINCI Rennes. Pour en savoir plus sur la formation c'est <a href="https://www.supdevinci.fr/formation/bachelor-specialite-developpement-informatique/rennes/" target="_blank" rel="noopener noreferrer">ici</a><br/>
 
                     <span className="presentation-span">Objectifs ? </span><br/>
                      Monter en compétences et m'épanouir en développant des applications mobiles et bureautiques. ANGULAR, PYTHON, C#, SWIFT et KOTLIN n'auront bientôt plus de secrets pour moi. Sans compter une évolution sur ma capacité à gérer un projet et les softs skills 
