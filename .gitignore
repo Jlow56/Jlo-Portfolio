@@ -1,22 +1,24 @@
+backend/.env
+backend/.env.*
+backend/.env.local
+
+
+frontend/.env
+frontend/.env.*
+frontend/.env.local
+
+# Dépendances
+backend/node_modules/
+frontend/node_modules/
+
+# Build
+frontend/dist/
+backend/dist/
+
 # Logs
-logs
 *.log
 npm-debug.log*
 
-package-lock.json*
-
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# OS
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+.vscode/

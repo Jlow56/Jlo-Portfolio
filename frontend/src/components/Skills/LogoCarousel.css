@@ -1,0 +1,33 @@
+.logos {
+  overflow: hidden;
+  padding: 2rem 0;
+  white-space: nowrap;
+  position: relative;
+}
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: slide 35s linear infinite;
+  will-change: transform;
+}
+.logos-slide img {
+  height: 70px;
+  margin: 0 25px;
+  vertical-align: middle;
+}
+.logos-slide:hover img {
+  scale: 1.2;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}/*# sourceMappingURL=LogoCarousel.css.map */

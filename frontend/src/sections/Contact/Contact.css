@@ -1,0 +1,97 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 40rem;
+  background-image: var(--bg-img-contact);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#contact form input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 15px;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: var(--bg-color-3);
+  color: var(--text-color-2);
+}
+#contact form label {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+#contact form textarea#message {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: var(--bg-color-3);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-color-2);
+}
+#contact form .btn-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  padding: 0.5em 1.2em;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: 3px solid var(--text-color);
+  border-radius: 15px;
+  color: var(--text-color-1);
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+}
+#contact form button.btn-contact {
+  transform: scale(1.05);
+}
+
+#contact form {
+  padding: 2rem 35rem;
+}
+@media (max-width: 1440px) {
+  #contact form {
+    padding: 2rem 30rem;
+  }
+}
+@media (max-width: 1024px) {
+  #contact form {
+    padding: 2rem 20rem;
+  }
+}
+@media (max-width: 768px) {
+  #contact form {
+    padding: 2rem 10rem;
+  }
+}
+@media (max-width: 425px) {
+  #contact form {
+    background-size: cover;
+    padding: 2rem 2rem;
+    gap: 1rem;
+  }
+  #contact form label {
+    font-size: 1.1rem;
+  }
+  #contact form input {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  #contact form .btn-contact {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=Contact.css.map */

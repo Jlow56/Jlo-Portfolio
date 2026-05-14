@@ -1,0 +1,157 @@
+.project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    width: 70%;
+
+    .top-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        border: 3px solid var(--text-color);
+        border-radius:20px;
+        padding: 0.5rem;
+        
+        .project-header-left {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            gap: 1rem;
+            padding:2rem 4rem;
+            width: 50%;
+
+            > p, > h2 {
+                padding: 0;
+                margin: 0;
+                font-size: 1.1rem ;
+                font-weight:bold;
+            }
+        }
+         
+        .project-header-right {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            align-items:flex-end;
+            gap: 2rem;
+            padding-inline: 4rem;
+            width: 50%;
+            
+            .link-container.website{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1rem;
+                height: 60px;
+                min-width: 268px;
+
+                .internet-logo {
+                    height: 60px;
+                    width: 60px;
+                }
+            }
+
+            .link-container.github {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1rem;
+
+                img.github-logo {
+                    height: 60px;
+                    width: 60px;
+                }
+            }
+
+            a > p {
+                padding: 0;
+                margin: 0;
+                font-size: 1.1rem ;
+                font-weight:bold;
+            }
+        }
+    }
+}
+
+.bottom-container {
+    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 20rem !important;
+    width: 75%;
+
+    .collapse-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+  
+    .project-header-left  {
+        font-size: 1.7rem !important;
+        padding-inline: 0 !important;
+      
+    }
+
+    .project-content .top-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-header-right{
+        padding-inline: 0 !important;
+
+         .link-container {
+            gap : 0 !important;
+        }
+        .internet-logo {
+            width: 3rem !important;
+        }
+
+        .github-logo {
+            width: 3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+  
+    .top-container {
+        padding: 1rem 2rem !important;
+        max-width: 320px !important;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .project-header-left h2 {
+    font-size: 1rem !important;
+      
+  }
+    .collapse-header-title {
+    font-size: 13px !important;
+  }
+
+  .collapse-header-icon {
+    font-size: 16px !important;
+  }
+
+  .housing-equipments-list,
+  .housing-description-p {
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .bottom-container {
+    padding: 6rem 2rem !important;
+  }
+}
+

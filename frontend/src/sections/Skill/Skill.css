@@ -1,0 +1,142 @@
+@charset "UTF-8";
+.skills {
+  font-size: 1rem;
+  padding-block: 3rem;
+  gap: 8rem;
+  display: flex;
+  flex-direction: column;
+}
+.skills .skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.skills .skills-container .skills-item {
+  border: 3px solid transparent;
+  border-radius: 15px;
+  background: linear-gradient(var(--bg-color-1), var(--bg-color-1)) padding-box, var(--nav-border-color) border-box;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+  width: 30rem;
+  height: 34rem;
+  box-shadow: #b8b8b8 0px 4px 15px 10px;
+}
+.skills .skills-container .skills-item .ruby-icon {
+  width: 5rem;
+  padding-top: 1rem;
+}
+.skills .skills-container .skills-item:hover {
+  transform: scale(1.05);
+}
+.skills .skills-container .skills-item h3 {
+  color: var(--text-color);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.skills .skills-container .skills-item .skill-list {
+  padding: 2rem;
+}
+.skills .skills-container .skills-item .soft-skills {
+  padding: 0;
+  margin: 0;
+}
+.skills .skills-container .skills-item .soft-skills li {
+  font-weight: 700;
+  font-size: 1rem;
+  padding-top: 0.5rem;
+}
+
+.miro-container {
+  /* largeur et centrage du conteneur si tu veux */
+  max-width: 900px;
+  margin: 0 auto;
+  /* ou full width selon besoin */
+}
+
+.miro-embed {
+  display: block; /* supprime l’espace en bas de l’iframe par défaut */
+  border: none; /* retire la bordure */
+  overflow: hidden; /* équivalent à scrolling="no" */
+}
+
+@media screen and (max-width: 1440px) {
+  .skills {
+    gap: 2rem;
+  }
+  .skills .skills-container {
+    gap: 4rem;
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .skills .skills-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem !important;
+  }
+  .skills .skills-container .skills-item {
+    width: 19rem;
+    height: 610px;
+  }
+  .skills .skills-container .skills-item h3 {
+    font-size: 1.5rem;
+  }
+  .skills .skills-container .skills-item .skill-list {
+    padding: 0.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .skills {
+    gap: 3rem;
+    align-items: center;
+    max-width: 768px;
+  }
+  .skills .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills .skills-container .skills-item h3 {
+    font-size: 1.5rem;
+  }
+  .skills .skills-container .skill-list {
+    padding: 0.5rem;
+  }
+  iframe {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .skills {
+    gap: 2rem;
+  }
+  .skills .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills .skills-container .skills-item {
+    width: 270px;
+    height: auto;
+  }
+  .skills .skills-container .skills-item h3 {
+    font-size: 1.1rem;
+  }
+  .skills .skills-container .skills-item .skill-list {
+    padding: 0.5rem;
+  }
+  .skills .skills-container .skills-item .logos-slide img {
+    height: 40px;
+  }
+  .skills iframe {
+    width: 90%;
+    height: auto;
+    height: 16rem;
+  }
+  .skills iframe .c-hOoPCq {
+    display: none;
+  }
+}/*# sourceMappingURL=Skill.css.map */

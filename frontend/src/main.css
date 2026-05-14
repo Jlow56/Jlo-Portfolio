@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* Thème clair (valeurs par défaut) */
+:root {
+  --text-color: #111111;
+  --text-color-2: #ffffff;
+  --accent-color: #000000;
+  --header-text-color: #111111;
+  --nav-texte-color: #14223b;
+  --nav-border-color: linear-gradient(90deg, #000000, #909090);
+  --color-toggle-dark: #fcfcfc;
+  --nav-linkedin-img: url('/src/assets/logo/Header/linkedin.png');
+  --nav-github-img: url('/src/assets/logo/Header/github-theme-light.png');
+  --bg-color-1: #ffffff;
+  --bg-color-2: #edf0f2;
+  --bg-color-3: black;
+  --section-border-color:linear-gradient(90deg, #000000, #bbbbbb);
+  --bg-img-home: url('/src/assets/img/home/home-line-background-white.svg');
+  --bg-btn-cv-start: #000000; /* couleur de fond */
+  --bg-btn-cv-end: #737373; /* couleur de fond */
+  --border-btn-cv-start: #e7e7e7;
+  --border-btn-cv-end: #000000;
+  --h2-color: #000000;
+  --background-verticale-icon: #FF9800;
+  --border-btn-cv: linear-gradient(90deg, var(--border-btn-cv-start), var(--border-btn-cv-end));
+  --color-toggle-light: #f6d447;
+  --border-color-toggle-cv: linear-gradient(90deg, #b3b3b3, #464545);
+  --bg-color-toggle: linear-gradient(90deg, #f6d447, #f6d447);
+  --border-top-container-start: #b3b3b3;
+  --border-top-container-end: #464545;
+  --border-color-toggle-send: linear-gradient(90deg, #b3b3b3, #464545);
+  --bg-color-toggle-send: linear-gradient(90deg, #b3b3b3, #464545);
+  --bg-img-contact: url('/src/assets/img/contact/contact-background-light.svg');
+}
+
+/* Thème sombre */
+[data-theme=dark] {
+  --nav-border-color: linear-gradient(90deg, #5170ff, #ff66c4);
+  --bg-color-1: #14223b;
+  --bg-color-2: #101728;
+  --bg-color-3: white;
+  --text-color: #ffffff;
+  --text-color-2: #000000;
+  --accent-color: #57ffdc;
+  --color-toggle-light: #f6d447;
+  --bg-img-home: url('/src/assets/img/home/home-line-background-dark.svg');
+  --bg-btn-cv-start: #004aad;
+  --bg-btn-cv-end: #cb6ce6;
+  --border-btn-cv-start: #8c52ff;
+  --border-btn-cv-end: #5ce1e6;
+  --h2-color:#9340ff;
+  --section-border-color: linear-gradient(90deg, #ff5757, #8c52ff);
+  --border-color-toggle-cv: linear-gradient(90deg, #8c52ff, #ff914d);
+  --border-top-container-start: #ff5757;
+  --border-top-container-end: #bff109;
+  --nav-github-img: url('/src/assets/logo/Header/github-theme-neon.png');
+  --bg-img-contact: url('/src/assets/img/contact/contact-background-dark.svg');
+}
+
+html {
+  color-scheme: light dark;
+}
+html body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color-1);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html body #root {
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100vh;
+}
+html body #root main {
+  gap: 7rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+html body #root main section:not(:first-of-type) {
+  position: relative;
+}
+html body #root main section:not(:first-of-type)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 65%;
+  background: var(--section-border-color);
+}
+html body #root main h2 {
+  color: var(--h2-color);
+  font-size: 2rem;
+}
+html body #root main li {
+  list-style: none;
+}
+
+@media screen and (max-width: 1024px) {
+  #root main {
+    gap: 5rem !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  #root main {
+    gap: 3rem !important;
+  }
+  #root main h2 {
+    font-size: 1.7rem !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  #root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 320px;
+  }
+  #root main {
+    align-items: center;
+    gap: 2rem !important;
+    max-width: 320px;
+  }
+  #root main section {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-block: 1rem;
+    max-width: 320px;
+  }
+  #root main h2 {
+    font-size: 1.1rem !important;
+  }
+}/*# sourceMappingURL=main.css.map */
