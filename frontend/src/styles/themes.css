@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* Thème clair (valeurs par défaut) */
 :root {
+  --bg-color-rgb: 255, 255, 255;
   --text-color: #111111;
   --text-color-2: #ffffff;
   --accent-color: #000000;
@@ -35,6 +36,7 @@
 /* Thème sombre */
 [data-theme=dark] {
   --nav-border-color: linear-gradient(90deg, #5170ff, #ff66c4);
+  --bg-color-rgb: 20, 34, 59;
   --bg-color-1: #14223b;
   --bg-color-2: #101728;
   --bg-color-3: white;
@@ -54,4 +56,6 @@
   --border-top-container-end: #bff109;
   --nav-github-img: url('/src/assets/logo/Header/github-theme-neon.png');
   --bg-img-contact: url('/src/assets/img/contact/contact-background-dark.svg');
-}/*# sourceMappingURL=themes.css.map */
+}
+
+/*# sourceMappingURL=themes.css.map */
