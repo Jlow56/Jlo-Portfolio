@@ -30,7 +30,6 @@ dist-ssr
 npm-debug.log*
 
 node_modules
-.git
 
 npm-debug.log
 Dockerfile
