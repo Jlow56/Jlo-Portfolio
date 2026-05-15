@@ -49,7 +49,6 @@ function Introducing() {
 
   const [shouldLoadGallery, setShouldLoadGallery] = useState(false);
   const [galleryImages, setGalleryImages] = useState([]);
-
   // 1. Observer la visibilité de la galerie
   useEffect(() => {
     const observer = new IntersectionObserver(
