@@ -1,7 +1,6 @@
-import './Introducing.scss';
 import { useState, useEffect, useRef } from 'react';
 import SlideShow from "../../components/ProjectPage/SlideShow";
-
+import './Introducing.scss';
 // Détection des images (mais sans chargement immédiat)
 const images = import.meta.glob(
   '../../assets/img/galerie/*.{webp,png,jpg,jpeg,svg}',

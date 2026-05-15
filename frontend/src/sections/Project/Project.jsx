@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import FilterButtons from "../../components/Project/FilterButtons";
-import { fetchProjects } from "../../api/project.api";
+import { fetchProjects } from "../../api/project.api.ts";
 
 import "./Project.scss";
 

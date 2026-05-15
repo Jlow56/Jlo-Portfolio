@@ -5,7 +5,7 @@ import SlideShow from "../../components/ProjectPage/SlideShow";
 import ProjectContent from "../../components/ProjectPage/ProjectContent";
 import ErrorPage from "./Error";
 
-import { fetchProjectBySlug } from "../../api/project.api";
+import { fetchProjectBySlug } from "../../api/project.api.ts";
 
 import "./ProjectDetails.scss";
 

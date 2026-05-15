@@ -13,7 +13,9 @@
     max-width: 1200px;
     margin: 0 auto;
 
-    .introducing-card--music     { grid-column: span 3; }
+    .introducing-card--music {
+      grid-column: span 3; 
+    }
   }
 }
 
@@ -103,7 +105,6 @@
     margin-bottom: 2rem;
   }
 
-
   .gallery-image {
     height: 20rem;
     object-fit: cover;
@@ -111,25 +112,23 @@
     border-radius: 30px;
   }
 
-
   .slider-section {
-        width: 100%;
+    width: 100%;
 
-        .slideshow-wrapper {
-            border-radius: 25px;
-            background: linear-gradient(var(--bg-color-1), var(--bg-color-1)) padding-box, var(--nav-border-color) border-box;
-            border: 2px solid transparent;
+    .slideshow-wrapper {
+        border-radius: 25px;
+        background: linear-gradient(var(--bg-color-1), var(--bg-color-1)) padding-box, var(--nav-border-color) border-box;
+        border: 2px solid transparent;
 
-            .slideshow-img-container {
-                transition: transform 1.5s ease-in-out !important; // ✅ animation lente
-            }
-        }
-
-        // ✅ frère du wrapper, pas enfant
-        .slideshow-count {
-            top: 110% !important;
+        .slideshow-img-container {
+          transition: transform 1.5s ease-in-out !important;
         }
     }
+    
+    .slideshow-count {
+      top: 110% !important;
+    }
+  }
 }
 
 // ── Tablet ─────────────────────────────────────
@@ -138,7 +137,9 @@
     grid-template-columns: repeat(2, 1fr);
 
     .introducing-card--objectifs,
-    .introducing-card--music { grid-column: span 2; }
+    .introducing-card--music { 
+      grid-column: span 2; 
+    }
   }
 
   .gallery-section {
