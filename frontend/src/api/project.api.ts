@@ -3,7 +3,7 @@ import { Project } from "../contracts";
 
 export const fetchProjects = async (): Promise<Project[]> => {
   try {
-    const res = await http.get("/projects");
+    const res = await http.get("api/projects");
     return Array.isArray(res.data?.data) ? res.data.data : [];
   } catch (err) {
     console.error("Erreur fetchProjects:", err);
