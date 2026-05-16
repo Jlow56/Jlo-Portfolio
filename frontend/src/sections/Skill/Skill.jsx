@@ -4,8 +4,8 @@ import { ThemeContext } from '../../context/ThemeContext';
 import skillsData    from '../../datas/skills.json';
 import LogoCarousel  from '../../components/Skills/LogoCarousel';
  
-import rubyIconeLight from '../../assets/logo/Skills/soft/ruby-dark.png';
-import rubyIconeDark  from '../../assets/logo/Skills/soft/ruby-light.png';
+import rubyIconeLight from '../../assets/logo/Skills/soft/ruby-dark.webp';
+import rubyIconeDark  from '../../assets/logo/Skills/soft/ruby-light.webp';
  
 import './Skill.scss';
  

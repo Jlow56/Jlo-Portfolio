@@ -4,8 +4,8 @@ import { ThemeContext } from '../../context/ThemeContext';
 
 import logoInternetDark from '../../assets/logo/Header/icon-internet-dark.svg';
 import logoInternetLight from '../../assets/logo/Header/icon-internet-light.svg';
-import logoGithubLight from '../../assets/logo/Header/github-theme-light.png';
-import logoGithubDark from '../../assets/logo/Header/github-theme-neon.png';
+import logoGithubLight from '../../assets/logo/Header/github-theme-light.webp';
+import logoGithubDark from '../../assets/logo/Header/github-theme-neon.webp';
 
 import "./ProjectContent.scss";
 

@@ -7,9 +7,9 @@ import { ThemeContext } from '../context/ThemeContext';
  
 import logoLight    from '../assets/logo/JlowDev/Logo-Gris-Blanc.svg';
 import logoDark     from '../assets/logo/JlowDev/Logo-theme-dark.svg';
-import logoGithubLight from '../assets/logo/Header/github-theme-light.png';
-import logoGithubDark  from '../assets/logo/Header/github-theme-neon.png';
-import logoLinkedIn    from '../assets/logo/Header/linkedin.png';
+import logoGithubLight from '../assets/logo/Header/github-theme-light.webp';
+import logoGithubDark  from '../assets/logo/Header/github-theme-neon.webp';
+import logoLinkedIn    from '../assets/logo/Header/linkedin.webp';
  
 import './Header.scss';
  
@@ -40,11 +40,6 @@ function Header() {
     return () => window.removeEventListener('resize', onResize);
   }, []);
  
-  // ── ✅ NOUVEAU : bloque le scroll du body quand menu ouvert ──
-  // Pourquoi ? Sur mobile, si le body peut scroller pendant que le
-  // menu est ouvert, l'utilisateur scrolle "en fond" sans le voir.
-  // C'est une mauvaise UX. On bloque avec overflow: hidden.
-  // Le return () nettoie quand le composant se démonte.
   useEffect(() => {
     document.body.style.overflow = menuOpen ? 'hidden' : '';
     return () => { document.body.style.overflow = ''; };
@@ -77,7 +72,6 @@ function Header() {
   ];
  
   // ── Liste des liens de nav (réutilisée desktop + mobile) ────
-  // Factorisation : on évite de dupliquer le même JSX deux fois
   const NavLinks = () => (
     <ul className="header-nav-ul">
       <li className="header-li">
@@ -119,17 +113,14 @@ function Header() {
     </ul>
   );
  
-  // ── ✅ MENU MOBILE via createPortal ─────────────────────────
+  // ── Rendu du MENU MOBILE via createPortal ─────────────────────────
   // createPortal(contenu, destinationDOM)
   // → Le contenu est rendu directement dans document.body
   // → Il échappe complètement au header et son backdrop-filter
-  // → position: fixed fonctionne par rapport à l'ÉCRAN (viewport)
-  //   et non par rapport au header
   const mobileMenuPortal = menuOpen
     ? createPortal(
         <>
           {/* Overlay sombre — cliquable pour fermer */}
-          {/* ✅ CORRIGÉ : était dans le corps de la fonction, jamais rendu */}
           <div
             className="nav-overlay"
             onClick={() => setMenuOpen(false)}
@@ -137,7 +128,6 @@ function Header() {
           />
  
           {/* Panneau de navigation mobile */}
-          {/* ✅ CORRIGÉ : width 100vw, positionné par rapport au viewport */}
           <nav
             className="header-nav-mobile"
             aria-label="Navigation principale mobile"
@@ -161,8 +151,6 @@ function Header() {
     : null;
  
   // ── RENDU ────────────────────────────────────────────────────
-  // Note : le Fragment <> </> permet de retourner plusieurs éléments
-  // sans div wrapper. Le header + le portal côte à côte.
   return (
     <>
       <header className={`header ${scrolled ? 'header--scrolled' : ''}`}>
