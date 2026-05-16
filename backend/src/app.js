@@ -63,9 +63,6 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
 }));
 
-// ✅ ET AJOUTER CECI juste après :
-app.options('*', cors());
-
 /**
  * Protection contre les attaques de NoSQL injection en nettoyant les données d'entrée
  */
@@ -138,7 +135,7 @@ app.use("/api/auth", rateLimit({
 const apiLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
   max: 200,
-  skip: (req) => req.path.startsWith("/auth")
+  skip: (req) => req.path.startsWith("/api/auth")
 });
 
 app.use("/api", apiLimiter);
