@@ -50,16 +50,21 @@ const allowedOrigins = process.env.CLIENT_URL // si plusieurs URL autorisées se
   ? process.env.CLIENT_URL.split(",") // sinon aucune origine autorisée 
   : []; // Liste blanche d'origines autorisées pour CORS
 
-app.use(cors({ // CORS strict avec validation de l'origine et support des cookies pour les requêtes cross-origin 
-  origin: (origin, callback) => { // Autoriser les requêtes sans origine (ex: Postman) ou celles provenant de la liste blanche 
-    if (!origin || allowedOrigins.includes(origin)) { // Si aucune origine (ex: Postman) ou si l'origine est dans la liste blanche, autoriser la requête 
-      callback(null, true); // Autoriser la requête en appelant le callback avec null pour l'erreur et true pour indiquer que l'origine est autorisée 
+app.use(cors({
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
     } else {
-      callback(new Error("Not allowed by CORS")); // Refuser la requête en appelant le callback avec une erreur indiquant que l'origine n'est pas autorisée 
+      callback(new Error("Not allowed by CORS"));
     }
   },
-  credentials: true, // Permettre l'envoi de cookies et d'autres informations d'identification dans les requêtes cross-origin
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
 }));
+
+// ✅ ET AJOUTER CECI juste après :
+app.options('*', cors());
 
 /**
  * Protection contre les attaques de NoSQL injection en nettoyant les données d'entrée
