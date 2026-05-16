@@ -90,7 +90,7 @@ function Project() {
             filteredProjects.map((project) => (
               <Link key={project.id} className="project-card" to={`/project/${project.slug}`}>
                 <div className="project-cover">
-                  <img src={project.cover} alt={project.name} className="project-image" />
+                  <img src={`/${project.cover}`} alt={project.name} className="project-image" />
                 </div>
                 <h3 className="project-title">{project.name}</h3>
                 <p className="project-description">{project.shortDescription}</p>
