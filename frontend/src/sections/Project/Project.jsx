@@ -78,8 +78,7 @@ function Project() {
       </div>
     </section>
   );
-
-
+  
   return (
     <section className="project-section" id="projects">
       <div className="projects-div">

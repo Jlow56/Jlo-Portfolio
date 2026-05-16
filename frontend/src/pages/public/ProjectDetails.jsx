@@ -53,9 +53,12 @@ function ProjectDetails() {
     return <div>Loading...</div>;
   }
 
+  const normalizePublicPath = (path) =>
+  path?.startsWith("/") ? path : `/${path}`;
+
   return (
     <section className="project-container" id="project" key={projectData._id}>
-      <SlideShow img={projectData.image} alt={projectData.name} />
+      <SlideShow img={projectData.image.map(normalizePublicPath)} alt={projectData.name} />
       <ProjectContent project={projectData} description={projectData.description} problematic={projectData.problematic} solution={projectData.solution} />
     </section>
   );

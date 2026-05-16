@@ -12,4 +12,4 @@ router.get("/", cache, getAllProjects);
 router.get("/category/:category", param("category").isIn(CATS).withMessage("Catégorie invalide"), validate, cache, getProjectsByCategory);
 router.get("/:slug", cache, getProjectBySlug);
 
-export default router;
+export default router; 
